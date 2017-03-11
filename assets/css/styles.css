@@ -443,6 +443,14 @@ button:active,
 
 
 /* GENERAL */
+*::selection {
+  background: rgba(96, 16, 96, .75);
+  color: rgb(255, 128, 200);
+}
+*::-moz-selection {
+  background: rgba(96, 16, 96, .75);
+  color: rgb(255, 128, 200);
+}
 
 a img{
 	outline:none;
