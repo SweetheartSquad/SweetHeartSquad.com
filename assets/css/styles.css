@@ -402,8 +402,15 @@ button:active,
 }
 
 
+.big-link{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 .mailing-list{
 	font-size:.5em;
+	margin-top:1em;
+	margin-bottom:1em;
 }
 
 .mailing-list input.email{
