@@ -127,6 +127,7 @@ h3{
 	max-width: 85%;
 
     -webkit-filter: drop-shadow(0px 3vh 0px rgba(100,0,50,0.5));
+    filter: drop-shadow(0px 3vh 0px rgba(100,0,50,0.5));
 
     background: url("../images/SweetHeart Squad - banner.png");
     background-position: center center;
@@ -359,6 +360,7 @@ button:active,
 	max-height: 85%;
 	transform: rotateY(180deg);
     -webkit-filter: drop-shadow(0px .5em 0px rgb(200, 70, 150));
+    filter: drop-shadow(0px .5em 0px rgb(200, 70, 150));
 
 	opacity:1;
 }
