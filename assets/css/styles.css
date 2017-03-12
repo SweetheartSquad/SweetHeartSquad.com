@@ -511,6 +511,7 @@ a{
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	opacity: 0.5;
 }
 .icon,
 .icon a{
@@ -525,27 +526,19 @@ a{
 	top:-100%;
 }
 .icon:hover:before{
+	opacity: 1;
 	background-color: rgb(255, 128, 200);
 }
 
 .gitmark:before{
-	background-image:url(../images/icons/GitHub-Mark-32px.png);
-}
-.genericlinkmark:before{
-	background-image:url(../images/icons/linkbutton.png);
+	background-image:url(../images/icons/icon_github.svg);
 }
 .emailmark:before{
-	background-image:url(../images/icons/email.png);
+	background-image:url(../images/icons/icon_email.svg);
 }
 .twittermark:before{
-	background-image:url(../images/icons/twitter.png);
-}
-.linkedinmark:before{
-	background-image:url(../images/icons/linkedin.png);
+	background-image:url(../images/icons/icon_twitter.svg);
 }
 .itchmark:before{
-	background-image:url(../images/icons/itch.png);
-}
-.tumblrmark:before{
-	background-image:url(../images/icons/tumblr.png);
+	background-image:url(../images/icons/icon_itch.svg);
 }
