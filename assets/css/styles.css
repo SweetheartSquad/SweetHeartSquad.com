@@ -483,6 +483,14 @@ a{
 }
 .playnow a{
 	text-decoration:underline;
+	font-weight: bold;
+	color:rgb(96,16,96);
+	cursor: pointer;
+	opacity: 1;
+	transition: opacity .2s ease;
+}
+.playnow a:hover{
+	opacity: .5;
 }
 
 .nowrap{
