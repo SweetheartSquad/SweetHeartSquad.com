@@ -1,4 +1,4 @@
-/* colors 
+/* colors
 rgb(255, 128, 200) pink
 rgb(128, 16, 128) purple
 */
@@ -87,7 +87,7 @@ h3{
 	display:block;
 	position:absolute;
 	top:0;
-	
+
 	background-image:
 	-webkit-repeating-linear-gradient(45deg, rgba(250,230,130,.042) 0%, transparent 20%),
 	-webkit-repeating-linear-gradient(-45deg, transparent 0%, rgba(250,230,130,.075) 10%),
@@ -372,7 +372,7 @@ button:active,
 	left:0;
 	right:0;
 	margin:auto;
-	
+
 	font-size: 1.5em;
 	line-height: 1em;
 	height:1.5em;
@@ -480,6 +480,9 @@ a img{
 }
 a{
 	text-decoration: none;
+}
+.playnow a{
+	text-decoration:underline;
 }
 
 .nowrap{
