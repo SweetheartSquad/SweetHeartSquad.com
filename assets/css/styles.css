@@ -191,6 +191,14 @@ section.content > h2{
 	flex: none;
 
 	box-shadow: 0 1vh 0 rgb(200, 70, 150);
+	transform: scale(.95);
+	transition: transform .2s cubic-bezier(0.1, 1.77, 0.45, 0.85);
+}
+.content.game .vidwrapper:hover{
+	transform: scale(1.05);
+}
+.content.game .vidwrapper:active{
+	transform: scale(.9);
 }
 video{
 	background:#000;
