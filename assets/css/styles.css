@@ -200,7 +200,8 @@ section.content > h2{
 .content.game .vidwrapper:active{
 	transform: scale(.9);
 }
-video{
+video,
+.content.game .vidwrapper img{
 	background:#000;
 	display: inline-block;
 	object-fit: cover;
