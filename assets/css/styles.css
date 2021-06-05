@@ -194,7 +194,8 @@ section.content > h2{
 	transform: scale(.95);
 	transition: transform .2s cubic-bezier(0.1, 1.77, 0.45, 0.85);
 }
-.content.game .vidwrapper:hover{
+.content.game .vidwrapper:hover,
+.content.game .vidwrapper:focus-within{
 	transform: scale(1.05);
 }
 .content.game .vidwrapper:active{
@@ -321,7 +322,9 @@ button,
 	margin:0;
 }
 button:hover,
-.button:hover{
+.button:hover,
+button:focus,
+.button:focus{
 	background: rgb(255, 175, 225);
 }
 button:active,
@@ -401,15 +404,18 @@ button:active,
 	backface-visibility: hidden;
 }
 
-.team .nav .teamicon:hover a{
+.team .nav .teamicon:hover a,
+.team .nav .teamicon:focus-within a{
 	background: rgb(200, 70, 150);
 	transform: scale(1.1) rotateY(0deg);
 }
-.team .nav .teamicon:hover a span{
+.team .nav .teamicon:hover a span,
+.team .nav .teamicon:focus-within a span{
 	opacity:1;
 	transform: rotateY(0deg);
 }
-.team .nav .teamicon:hover a img{
+.team .nav .teamicon:hover a img,
+.team .nav .teamicon:focus-within a img{
 	opacity:.25;
 }
 
@@ -498,7 +504,8 @@ a{
 	opacity: 1;
 	transition: opacity .2s ease;
 }
-.playnow a:hover{
+.playnow a:hover,
+.playnow a:focus{
 	opacity: .5;
 }
 
@@ -545,7 +552,8 @@ a{
 	display:inline-block;
 	top:-100%;
 }
-.icon:hover:before{
+.icon:hover:before,
+.icon:focus-within:before{
 	opacity: 1;
 	background-color: rgb(255, 128, 200);
 }
