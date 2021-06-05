@@ -344,7 +344,7 @@ button,
 	font-weight: 900;
 	border-radius: .3em;
 	padding: .5em;
-	transition: background .5s ease;
+	transition: background .2s ease;
 	cursor: pointer;
 	outline: none;
 	text-shadow: 0 -1px 0px rgba(96, 16, 96, .1);
