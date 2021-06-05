@@ -463,42 +463,6 @@ button:active,
 	margin-bottom: 1em;
 }
 
-.mailing-list {
-	font-size: .5em;
-	margin-top: 1em;
-	margin-bottom: 1em;
-}
-
-.mailing-list input.email {
-	display: inline-block;
-	border: solid 2px rgba(96, 16, 96, .1);
-	background: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-	font-size: 2em;
-	font-weight: 900;
-	border-radius: .3em;
-	padding: .5em;
-	transition: background .5s ease;
-	cursor: pointer;
-	outline: none;
-	text-shadow: 0 -1px 0px rgba(96, 16, 96, .1);
-	vertical-align: middle;
-	margin: 0;
-
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-	border-right: none;
-}
-
-.mailing-list button,
-.mailing-list .button {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-	border-left: none;
-}
-
-
-
 /* GENERAL */
 *::selection {
 	background: rgba(96, 16, 96, .75);
