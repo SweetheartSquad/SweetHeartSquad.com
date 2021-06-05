@@ -548,6 +548,9 @@ a {
 	opacity: 1;
 	transition: opacity .2s ease;
 }
+.playnow a::after {
+	content: ' >>';
+}
 
 .playnow a:hover,
 .playnow a:focus {
