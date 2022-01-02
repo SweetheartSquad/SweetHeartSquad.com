@@ -280,16 +280,16 @@ hr:before {
 }
 
 @media (orientation: landscape) {
-	.content.game:nth-of-type(odd) {
+	.content.game:nth-of-type(even) {
 		flex-direction: row-reverse;
 	}
 
-	.content.game:nth-of-type(odd) .textwrapper,
-	.content.game:nth-of-type(odd) .textwrapper p {
+	.content.game:nth-of-type(even) .textwrapper,
+	.content.game:nth-of-type(even) .textwrapper p {
 		text-align: right;
 	}
 
-	.content.game:nth-of-type(odd) .textwrapper p {
+	.content.game:nth-of-type(even) .textwrapper p {
 		padding-right: 0;
 		padding-left: 2em;
 	}
