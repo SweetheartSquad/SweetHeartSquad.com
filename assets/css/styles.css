@@ -585,6 +585,10 @@ a {
 	background-image: url(../images/icons/icon_twitter.svg);
 }
 
+.mastomark:before {
+	background-image: url(../images/icons/icon_mastodon.svg);
+}
+
 .itchmark:before {
 	background-image: url(../images/icons/icon_itch.svg);
 }
