@@ -339,8 +339,7 @@ hr:before {
 
 .nav ul li {
 	display: inline-block;
-	margin-left: .5vw;
-	margin-right: .5vw;
+	margin: .5vw;
 }
 
 .nav ul li a {
@@ -388,6 +387,10 @@ button:active,
 
 .team .nav {
 	margin-bottom: 1em;
+}
+
+.team .nav > ul {
+	white-space: pre-line;
 }
 
 .team .nav .teamicon a {
@@ -532,11 +535,6 @@ a {
 .playnow a:hover,
 .playnow a:focus {
 	opacity: .5;
-}
-
-.nowrap {
-	clear: both;
-	white-space: nowrap;
 }
 
 .pixelated {
