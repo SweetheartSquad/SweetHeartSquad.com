@@ -72,6 +72,7 @@ h3 {
 	position: relative;
 	z-index: -1000;
 	width: 100%;
+	overflow: hidden;
 
 	background-image: -webkit-linear-gradient(top, rgba(32, 16, 32, .33) 0%, rgba(32, 16, 32, 0) 3vh, rgba(32, 16, 32, 0) 97vh, rgba(32, 16, 32, .33) 100%);
 	background-image: -moz-linear-gradient(top, rgba(32, 16, 32, .33) 0%, rgba(32, 16, 32, 0) 3vh, rgba(32, 16, 32, 0) 97vh, rgba(32, 16, 32, .33) 100%);
@@ -86,11 +87,11 @@ h3 {
 
 @keyframes bg {
 	from {
-		background-size: 100%;
+		transform: scale(100%);
 	}
 
 	to {
-		background-size: 110%;
+		transform: scale(110%);
 	}
 }
 
