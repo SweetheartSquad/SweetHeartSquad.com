@@ -3,6 +3,12 @@ rgb(255, 128, 200) pink
 rgb(128, 16, 128) purple
 */
 
+@font-face {
+	font-family: 'Raleway';
+	font-display: swap;
+	src: url(../Raleway-VariableFont_wght.woff2);
+}
+
 html {
 	font-family: 'Raleway', 'Century Gothic', sans-serif;
 	font-size: 100%;
