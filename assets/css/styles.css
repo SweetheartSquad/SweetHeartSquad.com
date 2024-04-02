@@ -9,8 +9,18 @@ rgb(128, 16, 128) purple
 	src: url(../Raleway-VariableFont_wght.woff2);
 }
 
+@font-face {
+	font-family: 'Raleway Fallback';
+	src: local("Arial");
+	size-adjust: 102%;
+	ascent-override: 94%;
+	descent-override: 23.4%;
+	line-gap-override: 0%;
+}
+
 html {
-	font-family: 'Raleway', 'Century Gothic', sans-serif;
+	font-family: 'Raleway', 'Raleway Fallback', sans-serif;
+	font-family: 'Raleway Fallback', sans-serif;
 	font-size: 100%;
 	background-color: rgb(255, 215, 243);
 	color: #000000;
