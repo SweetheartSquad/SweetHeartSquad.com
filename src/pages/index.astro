@@ -18,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
 
 	<main>
 		{/* GAMES */}
-		{games.map(i => <Game {...i} />)}
+		{games.filter(i => i.showcase).map(i => <Game {...i} />)}
 
 		{/* BIG GAMES LINK */}
 		<section class="content big-link">
