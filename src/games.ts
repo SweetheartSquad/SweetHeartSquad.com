@@ -1,4 +1,13 @@
-export const games = [
+export type Game = {
+	title: string;
+	tagline: string;
+	description?: string;
+	url: string;
+	urlPoster?: string;
+	urlVideo?: string;
+	date: string;
+};
+export const games: Game[] = [
 	{
 		title: "How am I Still Waiting for the Bus?",
 		tagline: "You've been waiting for your bus...",

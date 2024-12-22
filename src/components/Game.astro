@@ -1,14 +1,8 @@
 ---
 import { readMediaAttributes } from "leather";
+import type { Game } from "../games";
 
-interface Props {
-	title: string;
-	tagline: string;
-	description: string;
-	url: string;
-	urlVideo: string;
-	urlPoster: string;
-}
+type Props = Game;
 const {
 	title,
 	tagline,
@@ -18,15 +12,15 @@ const {
 	urlPoster,
 } = Astro.props;
 
-const { width, height } = readMediaAttributes(`./public/${urlVideo}`);
+const { width, height } = urlVideo ? readMediaAttributes(`./public/${urlVideo}`) : { width: 0, height: 0 };
 
 ---
 <section class="content game">
-	<div class="vidwrapper"><a href={url} aria-label={`${title} - video preview - click to play`}><video preload="auto" autoplay="autoplay" loop="loop" muted="muted" width={width} height={height} poster={urlPoster}><source src={urlVideo} type="video/mp4" /></video></a></div>
+	{urlVideo && <div class="vidwrapper"><a href={url} aria-label={`${title} - video preview - click to play`}><video preload="auto" autoplay="autoplay" loop="loop" muted="muted" width={width} height={height} poster={urlPoster}><source src={urlVideo} type="video/mp4" /></video></a></div>}
 	<div class="textwrapper">
 		<h2>{title}</h2>
 		<p>{tagline}</p>
-		<p set:html={description} />
+		{description && <p set:html={description} />}
 		<p><span class="playnow"><a href={url}>Play now</a></span></p>
 	</div>
 </section>
