@@ -23,6 +23,7 @@ export default async function generateRssFeed() {
 			]
 				.filter((i) => i)
 				.join(" "),
+			date: new Date(i.date).toString() === "Invalid Date" ? undefined : i.date,
 			url: i.url,
 			enclosure: {
 				url: `${'https://sweetheartsquad.com'}${i.urlVideo

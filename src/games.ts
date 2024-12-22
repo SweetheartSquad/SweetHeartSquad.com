@@ -6,6 +6,7 @@ export const games = [
 		url: "https://sweetheartsquad.itch.io/how-am-i-still-waiting-for-the-bus",
 		urlPoster: "assets/video/bus.png",
 		urlVideo: "assets/video/bus.mp4",
+		date: "2024 December 21",
 	},
 	{
 		title: "BLOOD in the SKY: DEAD OR ALIVE",
@@ -14,6 +15,7 @@ export const games = [
 		url: "https://sweetheartsquad.itch.io/blood-in-the-sky",
 		urlPoster: "assets/video/blood.png",
 		urlVideo: "assets/video/blood.mp4",
+		date: "2024 July 18",
 	},
 	{
 		title: "Bleak",
@@ -22,6 +24,7 @@ export const games = [
 		url: "https://sweetheartsquad.itch.io/bleak",
 		urlPoster: "assets/video/bleak.png",
 		urlVideo: "assets/video/bleak.mp4",
+		date: "2022 November 30",
 	},
 	{
 		title: "We Follow The Fickle Path",
@@ -30,6 +33,7 @@ export const games = [
 		url: "https://sweetheartsquad.itch.io/we-follow-the-fickle-path",
 		urlPoster: "assets/video/fickle path.png",
 		urlVideo: "assets/video/fickle path.mp4",
+		date: "2021 November 28",
 	},
 	{
 		title: "Short Rest",
@@ -38,6 +42,7 @@ export const games = [
 		url: "https://sweetheartsquad.itch.io/short-rest",
 		urlPoster: "assets/video/short rest.png",
 		urlVideo: "assets/video/short rest.mp4",
+		date: "2021 September 12",
 	},
 	{
 		title: "Collar Me Impressed",
@@ -46,6 +51,7 @@ export const games = [
 		url: "https://sweetheartsquad.itch.io/collar-me-impressed",
 		urlPoster: "assets/video/collar me impressed.png",
 		urlVideo: "assets/video/collar me impressed.mp4",
+		date: "2020 December 25",
 	},
 	{
 		title: "Party, Darling?",
@@ -54,6 +60,7 @@ export const games = [
 		url: "https://sweetheartsquad.itch.io/party-darling",
 		urlPoster: "assets/video/party.png",
 		urlVideo: "assets/video/party.mp4",
+		date: "2016 March 09",
 	},
 	{
 		title: "Rōshigumi",
@@ -62,5 +69,6 @@ export const games = [
 		url: "https://sweetheartsquad.itch.io/roshigumi",
 		urlPoster: "assets/video/roshigumi.png",
 		urlVideo: "assets/video/roshigumi.mp4",
+		date: "2017 September 26",
 	},
 ];
