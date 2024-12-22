@@ -1,4 +1,6 @@
 ---
+import { readMediaAttributes } from "leather";
+
 interface Props {
 	title: string;
 	tagline: string;
@@ -6,8 +8,6 @@ interface Props {
 	url: string;
 	urlVideo: string;
 	urlPoster: string;
-	width: number;
-	height: number;
 }
 const {
 	title,
@@ -16,9 +16,9 @@ const {
 	url,
 	urlVideo,
 	urlPoster,
-	width,
-	height,
 } = Astro.props;
+
+const { width, height } = readMediaAttributes(`./public/${urlVideo}`);
 
 ---
 <section class="content game">
