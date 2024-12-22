@@ -25,12 +25,11 @@ export default async function generateRssFeed() {
 				.join(" "),
 			date: new Date(i.date).toString() === "Invalid Date" ? undefined : i.date,
 			url: i.url,
-			enclosure: {
-				url: `${'https://sweetheartsquad.com'}${i.urlVideo
-					.split("/")
-					.map(encodeURIComponent)
-					.join("/")}`,
-			}
+			enclosure: i.urlPoster ? {
+				url: `${'https://sweetheartsquad.com/'}${i.urlPoster}`,
+				type: `image/${i.urlPoster.split('.').pop()}`,
+				size: fs.statSync(`./public/${i.urlPoster}`).size,
+			} : undefined,
 		});
 	});
 	fs.writeFileSync(
