@@ -1,0 +1,95 @@
+:root {
+	--bg: #211927;
+	--fg: #efefef;
+  }
+  
+  * {
+	  padding: 0;
+	  margin: 0;
+  }
+  
+  rss {
+	  display: block;
+	  font-family: 'Courier New', Courier, monospace;
+	  background-color: var(--bg);
+	  color: var(--fg);
+	  padding: 1rem;
+  }
+  
+  title {
+	  font-weight: bold;
+	  display: block;
+  }
+  
+  channel {
+	  max-width: 728px;
+	  margin-inline: auto;
+	  display: flex;
+	  flex-direction: column;
+	  gap: 0.5rem;
+  }
+  
+  @media screen and (min-width: 1100px) {
+	  channel {
+		  max-width: 80%;
+	  }
+  }
+  
+  channel>title {
+	  font-size: 150%;
+  }
+  
+  /* hide stuff that's not really useful in the browser */
+  channel>image,
+  channel>generator,
+  channel>copyright,
+  enclosure,
+  lastBuildDate,
+  language,
+  guid,
+  channel>link {
+	  display: none;
+  }
+  
+  channel>item {
+	  background-color: rgba(0,0,0,0.5);
+	  border: 1px solid rgba(255,255,255,0.2);
+	  padding: 0.5rem 1rem;
+	  border-radius: 0.5rem;
+  }
+  
+  link,
+  pubDate,
+  item>category {
+	  opacity: 0.5;
+	  font-size: 75%;
+	  overflow-wrap: break-word;
+  }
+  
+  item>link {
+	  float: left;
+	  word-break: break-all;
+  }
+  
+  item>category {
+	  float: left;
+  }
+  item>category::before {
+	  content: '\00A0- ';
+  }
+  
+  item>pubDate {
+	  float: right;
+  }
+  
+  item>title {
+	  font-size: 125%;
+	  margin-bottom: 0.25rem;
+  }
+  
+  item>description {
+	  display: block;
+	  margin-bottom: 10px;
+	  overflow-wrap: break-word;
+  }
+  
