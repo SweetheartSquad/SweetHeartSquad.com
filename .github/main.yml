@@ -1,0 +1,59 @@
+name: Deploy website on push
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+
+env:
+  DISCORD_USERNAME: ${{ github.repository }}
+  DISCORD_AVATAR: https://raw.githubusercontent.com/${{ github.repository }}/main/public/assets/images/SweetHeart Squad - icon.png
+
+jobs:
+  notify-start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Ilshidur/action-discord@0.3.2
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_EMBEDS: '[{ "color": 16426275, "title": "deploying...", "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" }]'
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          cname: sweetheartsquad.com
+
+  notify-success:
+    if: ${{ success() }}
+    needs: [deploy]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Ilshidur/action-discord@0.3.2
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_EMBEDS: '[{ "color": 2357925, "title": "deployed", "url": "https://sweetheartsquad.com" }]'
+
+  notify-failure:
+    if: ${{ failure() }}
+    needs: [deploy]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Ilshidur/action-discord@0.3.2
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_EMBEDS: '[{ "color": 16393080, "title": "failed", "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" }]'

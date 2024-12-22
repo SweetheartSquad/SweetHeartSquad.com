@@ -1,44 +1,11 @@
-<!doctype html>
-<html lang="en">
+---
+import Layout from '../layouts/Layout.astro';
 
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
 
-	<title>SweetHeart Squad</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- GENERAL SEARCH INFO -->
-	<meta name="author" content="SweetHeart Squad" />
-	<meta name="copyright" content="SweetHeart Squad" />
-	<meta name="description" content="We make weird stuff.">
-	<meta name="keywords" content="games, videogames, software, programming, idk, these are dumb">
-	<link rel="canonical" href="https://SweetHeartSquad.com" />
-
-	<!-- OPENGRAPH TAGS -->
-	<meta property="og:title" content="SweetHeart Squad" />
-	<meta property="og:site_name" content="SweetHeart Squad" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://SweetHeartSquad.com" />
-	<meta property="og:image" content="https://sweetheartsquad.com/assets/images/SweetHeart%20Squad%20-%20icon.png" />
-
-
-	<!-- TWITTER CARD -->
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@SweetHeartSquad" />
-	<meta name="twitter:creator" content="SweetHeart Squad" />
-	<meta name="twitter:url" content="https://SweetHeartSquad.com" />
-	<meta name="twitter:title" content="SweetHeartSquad.com" />
-	<meta name="twitter:description" content="We make weird stuff." />
-	<meta name="twitter:image" content="https://sweetheartsquad.com/assets/images/SweetHeart%20Squad%20-%20icon.png" />
-
-	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
-</head>
-
-<body>
+<Layout>
 
 	<!-- LOGO HEADER -->
 	<header class="header grid dark-bg">
@@ -149,24 +116,4 @@
 		</section>
 
 	</main>
-
-	<!-- PRE-FOOTER ICON -->
-	<section class="grid dark-bg pre-footer"></section>
-
-	<!-- FOOTER WITH LINKS -->
-	<footer class="footer">
-		<nav class="nav">
-			<ul>
-				<li class="icon itchmark"><a title="Games on itch.io" href="https://SweetHeartSquad.itch.io">itch.io</a></li>
-				<li class="icon twittermark"><a title="Twitter" href="https://twitter.com/SweetHeartSquad">twitter</a></li>
-				<li class="icon mastomark"><a title="Mastodon" href="https://mastodon.gamedev.place/@SweetHeartSquad" rel="me">mastodon</a></li>
-				<li class="icon gitmark"><a title="GitHub" href="https://github.com/SweetHeartSquad">github</a></li>
-				<li class="icon emailmark"><a title="Email" href="mailto:SweetHeartSquad@gmail.com">email</a></li>
-			</ul>
-		</nav>
-		<p>Copyright © 2017-2024 SweetHeart Squad</p>
-	</footer>
-
-</body>
-
-</html>
+</Layout>

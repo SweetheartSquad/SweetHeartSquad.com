@@ -6,7 +6,7 @@ rgb(128, 16, 128) purple
 @font-face {
 	font-family: 'Raleway';
 	font-display: swap;
-	src: url(../Raleway-VariableFont_wght.woff2);
+	src: url("./Raleway-VariableFont_wght.woff2");
 }
 
 @font-face {
@@ -157,7 +157,7 @@ h2 {
 	-webkit-filter: drop-shadow(0px 3vh 0px rgba(100, 0, 50, 0.5));
 	filter: drop-shadow(0px 3vh 0px rgba(100, 0, 50, 0.5));
 
-	background-image: url("../images/SweetHeart Squad - banner.webp");
+	background-image: url("./SweetHeart Squad - banner.webp");
 	background-position: center center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -168,7 +168,7 @@ h2 {
 
 @media only screen and (max-width: 40em) {
 	.header h1 {
-		background-image: url("../images/SweetHeart Squad - banner -small.webp");
+		background-image: url("./SweetHeart Squad - banner -small.webp");
 	}
 }
 
@@ -339,7 +339,7 @@ hr:before {
 	display: inline-block;
 	border-radius: 50%;
 
-	background-image: url("../images/SweetHeart Squad - icon.png");
+	background-image: url("/assets/images/SweetHeart Squad - icon.png");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -601,21 +601,21 @@ a {
 }
 
 .gitmark:before {
-	background-image: url(../images/icons/icon_github.svg);
+	background-image: url("./icons/icon_github.svg");
 }
 
 .emailmark:before {
-	background-image: url(../images/icons/icon_email.svg);
+	background-image: url("./icons/icon_email.svg");
 }
 
 .twittermark:before {
-	background-image: url(../images/icons/icon_twitter.svg);
+	background-image: url("./icons/icon_twitter.svg");
 }
 
 .mastomark:before {
-	background-image: url(../images/icons/icon_mastodon.svg);
+	background-image: url("./icons/icon_mastodon.svg");
 }
 
 .itchmark:before {
-	background-image: url(../images/icons/icon_itch.svg);
+	background-image: url("./icons/icon_itch.svg");
 }
