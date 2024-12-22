@@ -53,8 +53,9 @@ h2 {
 	font-weight: 900;
 }
 
-h3 {
+.game .textwrapper > p:first-of-type {
 	font-weight: bold;
+	margin: 0;
 }
 
 
