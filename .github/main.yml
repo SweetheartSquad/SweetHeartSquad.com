@@ -37,6 +37,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           cname: sweetheartsquad.com
+          allow_empty_commit: true
 
   notify-success:
     if: ${{ success() }}
