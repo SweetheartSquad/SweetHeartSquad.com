@@ -619,3 +619,7 @@ a {
 .itchmark:before {
 	background-image: url("./icons/icon_itch.svg");
 }
+
+.rssmark:before {
+	background-image: url("./icons/icon_rss.svg");
+}
