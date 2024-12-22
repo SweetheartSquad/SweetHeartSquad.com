@@ -1,0 +1,32 @@
+---
+interface Props {
+	title: string;
+	tagline: string;
+	description: string;
+	url: string;
+	urlVideo: string;
+	urlPoster: string;
+	width: number;
+	height: number;
+}
+const {
+	title,
+	tagline,
+	description,
+	url,
+	urlVideo,
+	urlPoster,
+	width,
+	height,
+} = Astro.props;
+
+---
+<section class="content game">
+	<div class="vidwrapper"><a href={url} aria-label={`${title} - video preview - click to play`}><video preload="auto" autoplay="autoplay" loop="loop" muted="muted" width={width} height={height} poster={urlPoster}><source src={urlVideo} type="video/mp4" /></video></a></div>
+	<div class="textwrapper">
+		<h2>{title}</h2>
+		<p>{tagline}</p>
+		<p set:html={description} />
+		<p><span class="playnow"><a href={url}>Play now</a></span></p>
+	</div>
+</section>
