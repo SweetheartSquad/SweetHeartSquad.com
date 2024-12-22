@@ -1,7 +1,7 @@
 {
-  "name": "sweet-heart-squad-astro",
+  "name": "sweetheartsquad.com",
   "type": "module",
-  "version": "0.0.1",
+  "private": true,
   "scripts": {
     "start": "astro dev",
     "dev": "astro dev",
