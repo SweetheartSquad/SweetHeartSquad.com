@@ -10,7 +10,7 @@ concurrency:
 
 env:
   DISCORD_USERNAME: ${{ github.repository }}
-  DISCORD_AVATAR: https://raw.githubusercontent.com/${{ github.repository }}/main/public/assets/images/SweetHeart Squad - icon.png
+  DISCORD_AVATAR: https://raw.githubusercontent.com/${{ github.repository }}/main/public/assets/images/SweetHeart%20Squad%20-%20icon.png
 
 jobs:
   notify-start:
