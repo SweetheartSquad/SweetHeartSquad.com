@@ -10,6 +10,16 @@ export type Game = {
 };
 export const games: Game[] = [
 	{
+		title: 'SubLight Flotsam',
+		tagline: "scavenge the fathoms",
+		description: "sublight flotsam . a lost and found ocean arcology . . a submariner in miniature a false fish of lantern . . . find six signs of sub-aphotic activity scavenge the fathoms and succeed",
+		url: 'https://sweetheartsquad.itch.io/sublight-flotsam',
+		urlPoster: 'assets/video/bus.png',
+		urlVideo: 'assets/video/subLightFlotsam.mp4',
+		date: '2025 January 27',
+		showcase: false,
+	},
+	{
 		title: 'How am I Still Waiting for the Bus?',
 		tagline: "You've been waiting for your bus...",
 		description: "And waiting. And waiting. And now you're dead! Your soul is being drawn toward the afterlife, but you have to fight the urge. You can't die -- you have to get to WORK!!",
