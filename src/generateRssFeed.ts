@@ -27,9 +27,9 @@ export default async function generateRssFeed() {
 			date: new Date(i.date).toString() === "Invalid Date" ? undefined : i.date,
 			url: i.url,
 			enclosure: {
-				url: `https://sweetheartsquad.com/assets/video/${slugify(i.title, { strict: true })}.png`,
+				url: `https://sweetheartsquad.com/assets/covers/${slugify(i.title, { strict: true })}.png`,
 				type: `image/png`,
-				size: fs.statSync(`./public/assets/video/${slugify(i.title, { strict: true })}.png`).size,
+				size: fs.statSync(`./public/assets/covers/${slugify(i.title, { strict: true })}.png`).size,
 			},
 		});
 	});
