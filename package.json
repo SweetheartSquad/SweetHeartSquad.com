@@ -2,6 +2,9 @@
   "name": "sweetheartsquad.com",
   "type": "module",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "start": "astro dev",
     "dev": "astro dev",
