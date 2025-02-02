@@ -1,5 +1,6 @@
 ---
 import { readMediaAttributes } from "leather";
+import slugify from 'slugify';
 import type { Game } from "../games";
 
 type Props = Game;
@@ -8,9 +9,10 @@ const {
 	tagline,
 	description,
 	url,
-	urlVideo,
-	urlPoster,
 } = Astro.props;
+
+const urlVideo = `assets/video/${slugify(title, { strict: true })}.mp4`;
+const urlPoster = `assets/video/${slugify(title, { strict: true })}.png`;
 
 const { width, height } = urlVideo ? readMediaAttributes(`./public/${urlVideo}`) : { width: 0, height: 0 };
 

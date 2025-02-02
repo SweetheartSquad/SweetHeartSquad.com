@@ -12,6 +12,7 @@
   "devDependencies": {
     "astro": "^5.1.1",
     "leather": "^3.0.3",
-    "rss": "^1.2.2"
+    "rss": "^1.2.2",
+    "slugify": "^1.6.6"
   }
 }
