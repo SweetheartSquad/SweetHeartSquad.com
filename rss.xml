@@ -9,18 +9,18 @@
             <link>https://sweetheartsquad.com</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 28 Jan 2025 01:48:41 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 02 Feb 2025 17:53:25 GMT</lastBuildDate>
         <atom:link href="https://sweetheartsquad.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 28 Jan 2025 01:48:41 GMT</pubDate>
+        <pubDate>Sun, 02 Feb 2025 17:53:25 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, SweetHeart Squad]]></copyright>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[SubLight Flotsam]]></title>
-            <description><![CDATA[<blockquote>scavenge the fathoms</blockquote> sublight flotsam . a lost and found ocean arcology . . a submariner in miniature a false fish of lantern . . . find six signs of sub-aphotic activity scavenge the fathoms and succeed <a href="https://sweetheartsquad.itch.io/sublight-flotsam">https://sweetheartsquad.itch.io/sublight-flotsam</a>]]></description>
+            <description><![CDATA[<blockquote>scavenge the fathoms</blockquote> sublight flotsam<br/>&nbsp;.<br/>a lost and found ocean arcology<br/>&nbsp;.&nbsp;.<br/>a submariner in miniature a false fish of lantern<br/>&nbsp;.&nbsp;.&nbsp;.<br/>find six signs of sub-aphotic activity scavenge the fathoms and succeed <a href="https://sweetheartsquad.itch.io/sublight-flotsam">https://sweetheartsquad.itch.io/sublight-flotsam</a>]]></description>
             <link>https://sweetheartsquad.itch.io/sublight-flotsam</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/sublight-flotsam</guid>
             <pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate>
-            <enclosure url="https://sweetheartsquad.com/assets/video/bus.png" length="385750" type="image/png"/>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/SubLight-Flotsam.png" length="395507" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[How am I Still Waiting for the Bus?]]></title>
@@ -28,7 +28,7 @@
             <link>https://sweetheartsquad.itch.io/how-am-i-still-waiting-for-the-bus</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/how-am-i-still-waiting-for-the-bus</guid>
             <pubDate>Sat, 21 Dec 2024 00:00:00 GMT</pubDate>
-            <enclosure url="https://sweetheartsquad.com/assets/video/bus.png" length="385750" type="image/png"/>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/How-am-I-Still-Waiting-for-the-Bus.png" length="385750" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[BLOOD in the SKY: DEAD OR ALIVE]]></title>
@@ -36,7 +36,7 @@
             <link>https://sweetheartsquad.itch.io/blood-in-the-sky</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/blood-in-the-sky</guid>
             <pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate>
-            <enclosure url="https://sweetheartsquad.com/assets/video/blood.png" length="69709" type="image/png"/>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/BLOOD-in-the-SKY-DEAD-OR-ALIVE.png" length="69252" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Teddy Typtoes Tickle Tower]]></title>
@@ -44,6 +44,7 @@
             <link>https://sweetheartsquad.itch.io/teddy-typtoes-tickle-tower</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/teddy-typtoes-tickle-tower</guid>
             <pubDate>Sun, 28 Jan 2024 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Teddy-Typtoes-Tickle-Tower.png" length="514371" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Taxi Quest 66]]></title>
@@ -51,6 +52,7 @@
             <link>https://sweetheartsquad.itch.io/taxi-quest-66</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/taxi-quest-66</guid>
             <pubDate>Fri, 01 Dec 2023 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Taxi-Quest-66.png" length="70984" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[TOC TOC]]></title>
@@ -58,6 +60,7 @@
             <link>https://sweetheartsquad.itch.io/toc-toc</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/toc-toc</guid>
             <pubDate>Sun, 13 Aug 2023 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/TOC-TOC.png" length="21750" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Turnip the Heat!]]></title>
@@ -65,6 +68,7 @@
             <link>https://sweetheartsquad.itch.io/turnip-the-heat</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/turnip-the-heat</guid>
             <pubDate>Sun, 05 Feb 2023 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Turnip-the-Heat.png" length="263738" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Bleak]]></title>
@@ -72,7 +76,7 @@
             <link>https://sweetheartsquad.itch.io/bleak</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/bleak</guid>
             <pubDate>Wed, 30 Nov 2022 00:00:00 GMT</pubDate>
-            <enclosure url="https://sweetheartsquad.com/assets/video/bleak.png" length="354000" type="image/png"/>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Bleak.png" length="354000" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Taxi Quest 65]]></title>
@@ -80,6 +84,7 @@
             <link>https://sweetheartsquad.itch.io/taxi-quest-65</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/taxi-quest-65</guid>
             <pubDate>Sat, 29 Jan 2022 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Taxi-Quest-65.png" length="174997" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[We Follow The Fickle Path]]></title>
@@ -87,7 +92,7 @@
             <link>https://sweetheartsquad.itch.io/we-follow-the-fickle-path</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/we-follow-the-fickle-path</guid>
             <pubDate>Sun, 28 Nov 2021 00:00:00 GMT</pubDate>
-            <enclosure url="https://sweetheartsquad.com/assets/video/fickle path.png" length="48575" type="image/png"/>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/We-Follow-The-Fickle-Path.png" length="48575" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Advanced Bipedal Battle Armour: The Name of the Game]]></title>
@@ -95,6 +100,7 @@
             <link>https://sweetheartsquad.itch.io/advanced-bipedal-battle-armour</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/advanced-bipedal-battle-armour</guid>
             <pubDate>Tue, 05 Oct 2021 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Advanced-Bipedal-Battle-Armour-The-Name-of-the-Game.png" length="213013" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Short Rest]]></title>
@@ -102,7 +108,7 @@
             <link>https://sweetheartsquad.itch.io/short-rest</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/short-rest</guid>
             <pubDate>Sun, 12 Sep 2021 00:00:00 GMT</pubDate>
-            <enclosure url="https://sweetheartsquad.com/assets/video/short rest.png" length="298473" type="image/png"/>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Short-Rest.png" length="298473" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Rupert Rabbit in: Murder, My Bunny]]></title>
@@ -110,6 +116,7 @@
             <link>https://sweetheartsquad.itch.io/murder-my-bunny</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/murder-my-bunny</guid>
             <pubDate>Sun, 25 Apr 2021 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Rupert-Rabbit-in-Murder-My-Bunny.png" length="56295" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Finder's Keplers]]></title>
@@ -117,6 +124,7 @@
             <link>https://sweetheartsquad.itch.io/finders-keplers</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/finders-keplers</guid>
             <pubDate>Sun, 31 Jan 2021 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Finders-Keplers.png" length="2654" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[VARIETY MEGAJAM 2020 Retrospective]]></title>
@@ -124,6 +132,7 @@
             <link>https://sweetheartsquad.itch.io/variety-megajam-2020-retrospective</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/variety-megajam-2020-retrospective</guid>
             <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/VARIETY-MEGAJAM-2020-Retrospective.png" length="2581" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[truck(r)ing REMASTERED]]></title>
@@ -131,6 +140,7 @@
             <link>https://sweetheartsquad.itch.io/truckring-remastered</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/truckring-remastered</guid>
             <pubDate>Thu, 31 Dec 2020 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/truckring-REMASTERED.png" length="253683" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[The Dungeoneer's Cookbook]]></title>
@@ -138,6 +148,7 @@
             <link>https://sweetheartsquad.itch.io/the-dungeoneers-cookbook</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/the-dungeoneers-cookbook</guid>
             <pubDate>Wed, 30 Dec 2020 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/The-Dungeoneers-Cookbook.png" length="38456" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[SUPERmarket SPY 2D]]></title>
@@ -145,6 +156,7 @@
             <link>https://sweetheartsquad.itch.io/supermarket-spy-2d</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/supermarket-spy-2d</guid>
             <pubDate>Tue, 29 Dec 2020 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/SUPERmarket-SPY-2D.png" length="89471" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Le Prix d'Escalier]]></title>
@@ -152,6 +164,7 @@
             <link>https://sweetheartsquad.itch.io/le-prix-descalier</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/le-prix-descalier</guid>
             <pubDate>Mon, 28 Dec 2020 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Le-Prix-dEscalier.png" length="2966" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Beaks of Rage]]></title>
@@ -159,6 +172,7 @@
             <link>https://sweetheartsquad.itch.io/beaks-of-rage</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/beaks-of-rage</guid>
             <pubDate>Sun, 27 Dec 2020 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Beaks-of-Rage.png" length="10297" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Donut Get Burned!!]]></title>
@@ -166,6 +180,7 @@
             <link>https://sweetheartsquad.itch.io/donut-get-burned</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/donut-get-burned</guid>
             <pubDate>Sat, 26 Dec 2020 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Donut-Get-Burned.png" length="70248" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Collar Me Impressed]]></title>
@@ -173,14 +188,7 @@
             <link>https://sweetheartsquad.itch.io/collar-me-impressed</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/collar-me-impressed</guid>
             <pubDate>Fri, 25 Dec 2020 00:00:00 GMT</pubDate>
-            <enclosure url="https://sweetheartsquad.com/assets/video/collar me impressed.png" length="114546" type="image/png"/>
-        </item>
-        <item>
-            <title><![CDATA[Collar Me Impressed]]></title>
-            <description><![CDATA[<blockquote>Design an elegant cat collar with ease and speed!</blockquote> <a href="https://sweetheartsquad.itch.io/collar-me-impressed">https://sweetheartsquad.itch.io/collar-me-impressed</a>]]></description>
-            <link>https://sweetheartsquad.itch.io/collar-me-impressed</link>
-            <guid isPermaLink="true">https://sweetheartsquad.itch.io/collar-me-impressed</guid>
-            <pubDate>Fri, 25 Dec 2020 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Collar-Me-Impressed.png" length="114546" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[JET LI IS THE ONE (2001) ASKING YOU TO GET HIM A COFFEE]]></title>
@@ -188,6 +196,7 @@
             <link>https://sweetheartsquad.itch.io/jet-li-is-the-one-2001-coffee</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/jet-li-is-the-one-2001-coffee</guid>
             <pubDate>Thu, 24 Dec 2020 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/JET-LI-IS-THE-ONE-2001-ASKING-YOU-TO-GET-HIM-A-COFFEE.png" length="48344" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[truck(r)ing]]></title>
@@ -195,6 +204,7 @@
             <link>https://sweetheartsquad.itch.io/truckring</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/truckring</guid>
             <pubDate>Wed, 23 Dec 2020 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/truckring.png" length="39731" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[I Can Fix It!]]></title>
@@ -202,6 +212,7 @@
             <link>https://sweetheartsquad.itch.io/i-can-fix-it</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/i-can-fix-it</guid>
             <pubDate>Sun, 02 Feb 2020 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/I-Can-Fix-It.png" length="52559" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[ROUND TABLE]]></title>
@@ -209,6 +220,7 @@
             <link>https://sweetheartsquad.itch.io/round-table</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/round-table</guid>
             <pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/ROUND-TABLE.png" length="24120" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Fortune's Fervour]]></title>
@@ -216,6 +228,7 @@
             <link>https://sweetheartsquad.itch.io/fortunes-fervour</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/fortunes-fervour</guid>
             <pubDate>Wed, 15 May 2019 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Fortunes-Fervour.png" length="649875" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Homeward Bound]]></title>
@@ -223,6 +236,7 @@
             <link>https://sweetheartsquad.itch.io/homeward-bound</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/homeward-bound</guid>
             <pubDate>Mon, 28 Jan 2019 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Homeward-Bound.png" length="67420" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Goodbye BURGER CITY]]></title>
@@ -230,6 +244,7 @@
             <link>https://sweetheartsquad.itch.io/goodbye-burger-city</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/goodbye-burger-city</guid>
             <pubDate>Sun, 20 Jan 2019 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Goodbye-BURGER-CITY.png" length="3138" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[<3 SWEETHEART SQUAD MANIFESTO <3]]></title>
@@ -237,6 +252,7 @@
             <link>https://sweetheartsquad.itch.io/sweetheart-squad-manifesto</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/sweetheart-squad-manifesto</guid>
             <pubDate>Mon, 12 Feb 2018 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/less3-SWEETHEART-SQUAD-MANIFESTO-less3.png" length="19730" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Tuned in... to Love]]></title>
@@ -244,6 +260,7 @@
             <link>https://sweetheartsquad.itch.io/tuned-in-to-love</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/tuned-in-to-love</guid>
             <pubDate>Sun, 28 Jan 2018 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Tuned-in-to-Love.png" length="96235" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[The Baseball Kid: New Beginnings]]></title>
@@ -251,6 +268,7 @@
             <link>https://sweetheartsquad.itch.io/the-baseball-kid</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/the-baseball-kid</guid>
             <pubDate>Fri, 01 Dec 2017 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/The-Baseball-Kid-New-Beginnings.png" length="58272" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[BONZEN]]></title>
@@ -258,6 +276,7 @@
             <link>https://sweetheartsquad.itch.io/bonzen</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/bonzen</guid>
             <pubDate>Tue, 07 Nov 2017 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/BONZEN.png" length="33360" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Rōshigumi]]></title>
@@ -265,7 +284,7 @@
             <link>https://sweetheartsquad.itch.io/roshigumi</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/roshigumi</guid>
             <pubDate>Tue, 26 Sep 2017 00:00:00 GMT</pubDate>
-            <enclosure url="https://sweetheartsquad.com/assets/video/roshigumi.png" length="84333" type="image/png"/>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Roshigumi.png" length="84333" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[A Visitor on Venus]]></title>
@@ -273,6 +292,7 @@
             <link>https://sweetheartsquad.itch.io/a-visitor-on-venus</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/a-visitor-on-venus</guid>
             <pubDate>Wed, 14 Jun 2017 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/A-Visitor-on-Venus.png" length="94889" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[AS Mall World]]></title>
@@ -280,6 +300,7 @@
             <link>https://sweetheartsquad.itch.io/as-mall-world</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/as-mall-world</guid>
             <pubDate>Tue, 25 Apr 2017 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/AS-Mall-World.png" length="97144" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[BEAN]]></title>
@@ -287,6 +308,7 @@
             <link>https://sweetheartsquad.itch.io/bean</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/bean</guid>
             <pubDate>Sun, 22 Jan 2017 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/BEAN.png" length="8005" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Bouncing Balls with the Boing Boing Boys]]></title>
@@ -294,6 +316,7 @@
             <link>https://sweetheartsquad.itch.io/bouncing-balls-with-the-boing-boing-boys</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/bouncing-balls-with-the-boing-boing-boys</guid>
             <pubDate>Tue, 13 Dec 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Bouncing-Balls-with-the-Boing-Boing-Boys.png" length="39015" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[server.hack()]]></title>
@@ -301,6 +324,7 @@
             <link>https://sweetheartsquad.itch.io/server-hack</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/server-hack</guid>
             <pubDate>Sun, 13 Nov 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/serverhack.png" length="5855578" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[DYSCOVR]]></title>
@@ -308,6 +332,7 @@
             <link>https://sweetheartsquad.itch.io/DYSCOVR</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/DYSCOVR</guid>
             <pubDate>Tue, 30 Aug 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/DYSCOVR.png" length="89112" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[STRUNG OUT in heaven's high]]></title>
@@ -315,6 +340,7 @@
             <link>https://sweetheartsquad.itch.io/strung-out-in-heavens-high</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/strung-out-in-heavens-high</guid>
             <pubDate>Thu, 28 Jul 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/STRUNG-OUT-in-heavens-high.png" length="14658" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[#MURDERJAM2016]]></title>
@@ -322,6 +348,7 @@
             <link>https://sweetheartsquad.itch.io/murderjam2016</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/murderjam2016</guid>
             <pubDate>Sun, 26 Jun 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/MURDERJAM2016.png" length="2199" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Deluge Suites]]></title>
@@ -329,6 +356,7 @@
             <link>https://sweetheartsquad.itch.io/deluge-suites</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/deluge-suites</guid>
             <pubDate>Sun, 15 May 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Deluge-Suites.png" length="7582" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Purity]]></title>
@@ -336,6 +364,7 @@
             <link>https://sweetheartsquad.itch.io/purity</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/purity</guid>
             <pubDate>Mon, 18 Apr 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Purity.png" length="11768" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Drive Forever]]></title>
@@ -343,6 +372,7 @@
             <link>https://sweetheartsquad.itch.io/drive-forever</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/drive-forever</guid>
             <pubDate>Sun, 17 Apr 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Drive-Forever.png" length="2569" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[★ Creamie Buddies ★]]></title>
@@ -350,6 +380,7 @@
             <link>https://sweetheartsquad.itch.io/creamie-buddies</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/creamie-buddies</guid>
             <pubDate>Wed, 13 Apr 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Creamie-Buddies.png" length="23148" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Good Duel Game]]></title>
@@ -357,6 +388,7 @@
             <link>https://sweetheartsquad.itch.io/good-duel-game</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/good-duel-game</guid>
             <pubDate>Wed, 06 Apr 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Good-Duel-Game.png" length="7659" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Stone Cold Sexy]]></title>
@@ -364,6 +396,7 @@
             <link>https://sweetheartsquad.itch.io/stone-cold-sexy</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/stone-cold-sexy</guid>
             <pubDate>Tue, 05 Apr 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Stone-Cold-Sexy.png" length="9182" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[SODZEN]]></title>
@@ -371,6 +404,7 @@
             <link>https://sweetheartsquad.itch.io/sodzen</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/sodzen</guid>
             <pubDate>Sun, 03 Apr 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/SODZEN.png" length="4817" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[CODENAME: PAWN]]></title>
@@ -378,6 +412,7 @@
             <link>https://sweetheartsquad.itch.io/codename-pawn</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/codename-pawn</guid>
             <pubDate>Fri, 01 Apr 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/CODENAME-PAWN.png" length="44133" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Party, Darling?]]></title>
@@ -385,7 +420,7 @@
             <link>https://sweetheartsquad.itch.io/party-darling</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/party-darling</guid>
             <pubDate>Wed, 09 Mar 2016 00:00:00 GMT</pubDate>
-            <enclosure url="https://sweetheartsquad.com/assets/video/party.png" length="76647" type="image/png"/>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Party-Darling.png" length="76647" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Rip It! Grip It! Sip It!]]></title>
@@ -393,6 +428,7 @@
             <link>https://sweetheartsquad.itch.io/rip-it-grip-it-sip-it</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/rip-it-grip-it-sip-it</guid>
             <pubDate>Thu, 04 Feb 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Rip-It-Grip-It-Sip-It.png" length="62968" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Super Spaceship 64]]></title>
@@ -400,6 +436,7 @@
             <link>https://sweetheartsquad.itch.io/super-spaceship-64</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/super-spaceship-64</guid>
             <pubDate>Mon, 25 Jan 2016 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Super-Spaceship-64.png" length="17520" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Llammigration (demo)]]></title>
@@ -407,6 +444,7 @@
             <link>https://sweetheartsquad.itch.io/llammigration</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/llammigration</guid>
             <pubDate>Mon, 21 Dec 2015 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Llammigration-demo.png" length="111868" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Go On]]></title>
@@ -414,6 +452,7 @@
             <link>https://sweetheartsquad.itch.io/go-on</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/go-on</guid>
             <pubDate>Tue, 15 Dec 2015 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Go-On.png" length="3942" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Taxi Quest 64]]></title>
@@ -421,6 +460,7 @@
             <link>https://sweetheartsquad.itch.io/taxi-quest-64</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/taxi-quest-64</guid>
             <pubDate>Tue, 15 Dec 2015 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Taxi-Quest-64.png" length="16350" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[SweetBeats]]></title>
@@ -428,6 +468,7 @@
             <link>https://sweetheartsquad.itch.io/sweetbeats</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/sweetbeats</guid>
             <pubDate>Sun, 15 Nov 2015 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/SweetBeats.png" length="19730" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Dad, Don't Open Spyware!!!]]></title>
@@ -435,6 +476,7 @@
             <link>https://sweetheartsquad.itch.io/dad-dont-open-spyware</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/dad-dont-open-spyware</guid>
             <pubDate>Fri, 03 Jul 2015 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Dad-Dont-Open-Spyware.png" length="52278" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Hare's Hollow]]></title>
@@ -442,6 +484,7 @@
             <link>https://sweetheartsquad.itch.io/hares-hollow</link>
             <guid isPermaLink="true">https://sweetheartsquad.itch.io/hares-hollow</guid>
             <pubDate>Wed, 01 Jul 2015 00:00:00 GMT</pubDate>
+            <enclosure url="https://sweetheartsquad.com/assets/covers/Hares-Hollow.png" length="33134" type="image/png"/>
         </item>
     </channel>
 </rss>
