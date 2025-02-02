@@ -10,7 +10,7 @@ export const games: Game[] = [
 	{
 		title: 'SubLight Flotsam',
 		tagline: "scavenge the fathoms",
-		description: "sublight flotsam . a lost and found ocean arcology . . a submariner in miniature a false fish of lantern . . . find six signs of sub-aphotic activity scavenge the fathoms and succeed",
+		description: "sublight flotsam<br/>&nbsp;.<br/>a lost and found ocean arcology<br/>&nbsp;.&nbsp;.<br/>a submariner in miniature a false fish of lantern<br/>&nbsp;.&nbsp;.&nbsp;.<br/>find six signs of sub-aphotic activity scavenge the fathoms and succeed",
 		url: 'https://sweetheartsquad.itch.io/sublight-flotsam',
 		date: '2025 January 27',
 		showcase: false,
