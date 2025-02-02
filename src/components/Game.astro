@@ -19,7 +19,7 @@ const hasVideo = fs.existsSync(`./public/${urlVideo}`);
 const hasGif = fs.existsSync(`./public/${urlGif}`);
 const urlMain = hasVideo ? urlVideo : (hasGif ? urlGif : urlPoster);
 
-const { width, height } = urlVideo ? readMediaAttributes(`./public/${urlMain}`) : { width: 0, height: 0 };
+const { width, height } = readMediaAttributes(`./public/${urlMain}`);
 
 ---
 <section class="content game">
