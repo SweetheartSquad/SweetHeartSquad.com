@@ -166,12 +166,6 @@ export const games: Game[] = [
 		showcase: true,
 	},
 	{
-		title: 'Collar Me Impressed',
-		tagline: 'Design an elegant cat collar with ease and speed!',
-		url: 'https://sweetheartsquad.itch.io/collar-me-impressed',
-		date: '2020 December 25',
-	},
-	{
 		title: 'JET LI IS THE ONE (2001) ASKING YOU TO GET HIM A COFFEE',
 		tagline: 'And he likes it strong.',
 		url: 'https://sweetheartsquad.itch.io/jet-li-is-the-one-2001-coffee',
