@@ -1,5 +1,6 @@
 import fs from "fs";
 import RSS from "rss";
+import slugify from "slugify";
 import { games } from './games';
 
 export default async function generateRssFeed() {
@@ -25,11 +26,11 @@ export default async function generateRssFeed() {
 				.join(" "),
 			date: new Date(i.date).toString() === "Invalid Date" ? undefined : i.date,
 			url: i.url,
-			enclosure: i.urlPoster ? {
-				url: `${'https://sweetheartsquad.com/'}${i.urlPoster}`,
-				type: `image/${i.urlPoster.split('.').pop()}`,
-				size: fs.statSync(`./public/${i.urlPoster}`).size,
-			} : undefined,
+			enclosure: {
+				url: `https://sweetheartsquad.com/assets/video/${slugify(i.title, { strict: true })}.png`,
+				type: `image/png`,
+				size: fs.statSync(`./public/assets/video/${slugify(i.title, { strict: true })}.png`).size,
+			},
 		});
 	});
 	fs.writeFileSync(
