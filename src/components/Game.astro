@@ -1,4 +1,5 @@
 ---
+import fs from 'fs';
 import { readMediaAttributes } from "leather";
 import slugify from 'slugify';
 import type { Game } from "../games";
@@ -12,13 +13,18 @@ const {
 } = Astro.props;
 
 const urlVideo = `assets/video/${slugify(title, { strict: true })}.mp4`;
+const urlGif = `assets/video/${slugify(title, { strict: true })}.gif`;
 const urlPoster = `assets/video/${slugify(title, { strict: true })}.png`;
+const hasVideo = fs.existsSync(`./public/${urlVideo}`);
+const hasGif = fs.existsSync(`./public/${urlGif}`);
+const urlMain = hasVideo ? urlVideo : (hasGif ? urlGif : urlPoster);
 
-const { width, height } = urlVideo ? readMediaAttributes(`./public/${urlVideo}`) : { width: 0, height: 0 };
+const { width, height } = urlVideo ? readMediaAttributes(`./public/${urlMain}`) : { width: 0, height: 0 };
 
 ---
 <section class="content game">
-	{urlVideo && <div class="vidwrapper"><a href={url} aria-label={`${title} - video preview - click to play`}><video preload="auto" autoplay="autoplay" loop="loop" muted="muted" width={width} height={height} poster={urlPoster}><source src={urlVideo} type="video/mp4" /></video></a></div>}
+	{hasVideo && <div class="vidwrapper"><a href={url} aria-label={`${title} - video preview - click to play`}><video preload="auto" autoplay="autoplay" loop="loop" muted="muted" width={width} height={height} poster={urlPoster}><source src={urlVideo} type="video/mp4" /></video></a></div>}
+	{!hasVideo && <div class="vidwrapper"><a href={url} aria-label={`${title} - preview - click to play`}><img loading="lazy" width={width} height={height} src={hasGif ? urlGif : urlPoster} /></a></div>}
 	<div class="textwrapper">
 		<h2>{title}</h2>
 		<p>{tagline}</p>
