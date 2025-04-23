@@ -8,6 +8,14 @@ export type Game = {
 };
 export const games: Game[] = [
 	{
+		title: 'Taxi Quest 67',
+		tagline: "A boat is fundamentally different than a car.",
+		description: "A game about a road trip.",
+		url: 'https://sweetheartsquad.itch.io/taxi-quest-67',
+		date: '2025 April 23',
+		showcase: false,
+	},
+	{
 		title: 'SubLight Flotsam',
 		tagline: "scavenge the fathoms",
 		description: "sublight flotsam<br/>&nbsp;.<br/>a lost and found ocean arcology<br/>&nbsp;.&nbsp;.<br/>a submariner in miniature a false fish of lantern<br/>&nbsp;.&nbsp;.&nbsp;.<br/>find six signs of sub-aphotic activity scavenge the fathoms and succeed",
