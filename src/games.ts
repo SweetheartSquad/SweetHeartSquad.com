@@ -9,7 +9,7 @@ export type Game = {
 export const games: Game[] = [
 	{
 		title: 'Taxi Quest 67',
-		tagline: "A boat is fundamentally different than a car.",
+		tagline: "\"A boat is fundamentally different than a car.\"",
 		description: "A game about a road trip.",
 		url: 'https://sweetheartsquad.itch.io/taxi-quest-67',
 		date: '2025 April 23',
