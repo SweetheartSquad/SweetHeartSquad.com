@@ -1,9 +1,12 @@
 ---
 import "../layouts/index.css";
 
+import { getCollection } from "astro:content";
 import Game from '../components/Game.astro';
-import { games } from '../games';
 import Layout from '../layouts/Layout.astro';
+
+const games = await getCollection('games');
+games.sort((a,b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
 <Layout
@@ -24,7 +27,7 @@ import Layout from '../layouts/Layout.astro';
 
 	<main>
 		{/* GAMES */}
-		{games.filter(i => i.showcase).map(i => <Game {...i} />)}
+		{games.filter(i => i.data.showcase).map(i => <Game {...i.data} />)}
 
 		{/* BIG GAMES LINK */}
 		<section class="content big-link">

@@ -1,10 +1,10 @@
 ---
+import type { CollectionEntry } from 'astro:content';
 import fs from 'fs';
 import { readMediaAttributes } from "leather";
 import slugify from 'slugify';
-import type { Game } from "../games";
 
-type Props = Game;
+type Props = CollectionEntry<'games'>['data'];
 const {
 	title,
 	tagline,
