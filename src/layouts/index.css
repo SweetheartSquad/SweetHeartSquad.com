@@ -183,3 +183,22 @@ video,
 	animation-delay: 2s;
 	animation-timing-function: ease-in-out;
 }
+
+.pre-footer {
+	height: 10em;
+	text-align: center;
+}
+
+.pre-footer:before {
+	content: '';
+	width: 8em;
+	height: 8em;
+	margin-top: 1em;
+	display: inline-block;
+	border-radius: 50%;
+
+	background-image: url("/assets/images/SweetHeart Squad - icon.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
