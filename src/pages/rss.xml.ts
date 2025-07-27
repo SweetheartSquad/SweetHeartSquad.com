@@ -1,30 +1,26 @@
-import fs from "fs";
-import RSS from "rss";
-import slugify from "slugify";
-import { games } from './games';
+import type { APIRoute } from 'astro';
+import fs from 'fs';
+import RSS from 'rss';
+import slugify from 'slugify';
 
-export default async function generateRssFeed() {
+export const GET: APIRoute = async () => {
 	const feed = new RSS({
-		title: "SweetHeart Squad",
+		title: 'SweetHeart Squad',
 		site_url: 'https://sweetheartsquad.com',
 		feed_url: `${'https://sweetheartsquad.com'}/rss.xml`,
 		image_url: `${'https://sweetheartsquad.com'}/assets/image/SweetHeart Squad - icon.png`,
 		pubDate: new Date(),
 		copyright: `All rights reserved ${new Date().getFullYear()}, SweetHeart Squad`,
-		language: "en",
+		language: 'en',
 	});
+
+	const { games } = await import('../games');
 
 	games.forEach((i) => {
 		feed.item({
 			title: i.title,
-			description: [
-				i.tagline ? `<blockquote>${i.tagline}</blockquote>` : "",
-				i.description,
-				`<a href="${i.url}">${i.url}</a>`,
-			]
-				.filter((i) => i)
-				.join(" "),
-			date: new Date(i.date).toString() === "Invalid Date" ? undefined : i.date,
+			description: [i.tagline ? `<blockquote>${i.tagline}</blockquote>` : '', i.description, `<a href="${i.url}">${i.url}</a>`].filter(i => i).join(' '),
+			date: i.date,
 			url: i.url,
 			enclosure: {
 				url: `https://sweetheartsquad.com/assets/covers/${slugify(i.title, { strict: true })}.png`,
@@ -33,10 +29,9 @@ export default async function generateRssFeed() {
 			},
 		});
 	});
-	fs.writeFileSync(
-		"./public/rss.xml",
-		feed
-			.xml({ indent: true })
-			.replace("?>", '?><?xml-stylesheet href="/rss.css" type="text/css"?>')
-	);
-}
+	return new Response(feed.xml({ indent: true }).replace('?>', '?><?xml-stylesheet href="/rss.css" type="text/css"?>'), {
+		headers: {
+			'content-type': 'application/xml',
+		},
+	});
+};
