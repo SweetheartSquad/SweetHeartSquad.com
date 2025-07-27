@@ -19,3 +19,7 @@ iframe {
 	max-height: 80svh;
 	aspect-ratio: 16/9;
 }
+
+p {
+	margin-block: 0.5rem;
+}
