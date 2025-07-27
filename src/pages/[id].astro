@@ -1,4 +1,6 @@
 ---
+import "../layouts/game.css";
+
 import slugify from 'slugify';
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
@@ -30,15 +32,16 @@ const { data: game } = entry;
 const Content = (await render(entry)).Content;
 
 const banner = (await banners[`/${entry.filePath?.replace('.mdx','-banner') || ''}`]?.())?.default;
-const bg = (await bgs[`/${entry.filePath?.replace('.mdx','-bg') || ''}`]?.())?.default;
+const bgImage = (await bgs[`/${entry.filePath?.replace('.mdx','-bg') || ''}`]?.())?.default;
 const social = (await socials[`/${entry.filePath?.replace('.mdx','-social') || ''}`]?.())?.default || `assets/covers/${slugify(game.title, { strict: true })}.png`;
 ---
 
 <Layout
 	title={game.title}
 	description={game.description || ''}
-	bg={bg}
 	image={social}
+	bgColor={game.bg}
+	bgImage={bgImage}
 >
 
 <h1>{

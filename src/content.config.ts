@@ -10,6 +10,7 @@ const games = defineCollection({
 		description: z.string().optional(),
 		url: z.string().url(),
 		date: z.coerce.date(),
+		bg: z.string().optional(),
 		showcase: z.boolean().optional().default(false),
 		embed: z.string().url().optional(),
 		downloads: z.array(z.string().url()).optional(),

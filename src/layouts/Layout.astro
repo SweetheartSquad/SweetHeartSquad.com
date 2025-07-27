@@ -5,8 +5,9 @@ import "./style.css";
 interface Props {
 	title: string;
 	description: string;
-	bg?: ImageMetadata;
 	image: string | ImageMetadata;
+	bgColor?: string;
+	bgImage?: ImageMetadata;
 }
 
 
@@ -53,9 +54,10 @@ interface Props {
 	<slot name="head" />
 </head>
 
-<body style={Astro.props.bg ? {
-	backgroundImage: `url("${Astro.props.bg?.src}")`,
-} : undefined}>
+<body style={{
+	backgroundColor: Astro.props.bgColor,
+	backgroundImage: Astro.props.bgImage ? `url("${Astro.props.bgImage?.src}")` : undefined,
+}}>
 
 	<slot />
 
