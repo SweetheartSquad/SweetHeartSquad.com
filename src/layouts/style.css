@@ -344,13 +344,13 @@ button:active,
 
 /* GENERAL */
 *::selection {
-	background: rgba(96, 16, 96, .75);
-	color: rgb(255, 128, 200);
+	background: var(--accent);
+	color: var(--bg);
 }
 
 *::-moz-selection {
-	background: rgba(96, 16, 96, .75);
-	color: rgb(255, 128, 200);
+	background: var(--accent);
+	color: var(--bg);
 }
 
 img::selection {
@@ -426,6 +426,7 @@ a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	opacity: 0.5;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 .icon,
@@ -445,7 +446,7 @@ a {
 .icon:hover:before,
 .icon:focus-within:before {
 	opacity: 1;
-	background-color: rgb(255, 128, 200);
+	background-color: var(--accent);
 }
 
 .gitmark:before {
