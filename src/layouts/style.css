@@ -91,6 +91,7 @@ h2 {
 	z-index: -1000;
 	width: 100%;
 	overflow: hidden;
+	transform: scale(100%);
 
 	background-image: -webkit-linear-gradient(top, rgba(32, 16, 32, .33) 0%, rgba(32, 16, 32, 0) 3vh, rgba(32, 16, 32, 0) 97vh, rgba(32, 16, 32, .33) 100%);
 	background-image: -moz-linear-gradient(top, rgba(32, 16, 32, .33) 0%, rgba(32, 16, 32, 0) 3vh, rgba(32, 16, 32, 0) 97vh, rgba(32, 16, 32, .33) 100%);
@@ -100,16 +101,6 @@ h2 {
 @media (orientation: landscape) {
 	.header {
 		min-height: 100vh;
-	}
-}
-
-@keyframes bg {
-	from {
-		transform: scale(100%);
-	}
-
-	to {
-		transform: scale(110%);
 	}
 }
 
@@ -143,11 +134,6 @@ h2 {
 	background-position: center center;
 	background-size: 100%;
 
-	animation: bg 16s;
-	animation-fill-mode: forwards;
-	animation-iteration-count: 1;
-	animation-delay: 2s;
-	animation-timing-function: ease-in-out;
 	pointer-events: none;
 }
 

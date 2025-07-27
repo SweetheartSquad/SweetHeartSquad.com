@@ -166,3 +166,20 @@ video,
 	}
 }
 
+@keyframes bg {
+	from {
+		transform: scale(100%);
+	}
+
+	to {
+		transform: scale(110%);
+	}
+}
+
+.grid::after {
+	animation: bg 16s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+}
