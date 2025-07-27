@@ -38,7 +38,7 @@ const bg = (await bgs[`/${entry.filePath?.replace('.mdx','-bg') || ''}`]?.())?.d
 >
 
 <h1>{
-	banner ? <Image src={banner} alt={game.title} /> : game.title
+	banner ? <Image src={banner} alt={game.title} loading="eager" /> : game.title
 }</h1>
 
 <section>
