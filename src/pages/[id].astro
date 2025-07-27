@@ -44,27 +44,31 @@ const social = (await socials[`/${entry.filePath?.replace('.mdx','-social') || '
 	bgImage={bgImage}
 >
 
-<h1>{
-	banner ? <Image src={banner} alt={game.title} loading="eager" /> : game.title
-}</h1>
+<main>
+	<h1>{
+		banner ? <Image src={banner} alt={game.title} loading="eager" /> : game.title
+	}</h1>
 
-<section>
-	{game.embed && <iframe src={game.embed} />}
-</section>
-<section>
-	<Content />
-</section>
+	<section>
+		{game.embed && <iframe src={game.embed} />}
+	</section>
+	<section>
+		<Content />
+	</section>
 
-{
-	(game.downloads?.length ?? 0 > 0) && (
-		<h2>Download</h2>
-		<ul>
-			{game.downloads?.map(i => (
-				<li>
-					<a href={i}>{i.split('/').filter(i => i).pop()}</a>
-				</li>
-			))}
-		</ul>
-	)
-}
+	<section class="downloads">
+	{
+		(game.downloads?.length ?? 0 > 0) && (
+			<h2>Download</h2>
+			<ul>
+				{game.downloads?.map(i => (
+					<li>
+						<a href={i}>{i.split('/').filter(i => i).pop()}</a>
+					</li>
+				))}
+			</ul>
+		)
+	}
+	</section>
+</main>
 </Layout>

@@ -3,9 +3,19 @@ body {
 	background-position: center top;
 }
 
+main {
+	max-width: 1280px;
+	margin-inline: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
 iframe {
 	border: none;
 	background-color: black;
-	width: 80vw;
-	height: 80svh;
+	width: 100%;
+	max-height: 80svh;
+	aspect-ratio: 16/9;
 }
