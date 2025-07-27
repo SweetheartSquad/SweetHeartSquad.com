@@ -166,6 +166,7 @@ hr {
 
 .pre-footer {
 	height: 10em;
+	text-align: center;
 }
 
 .pre-footer:before {
