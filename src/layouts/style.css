@@ -143,35 +143,6 @@ h2 {
 	pointer-events: none;
 }
 
-.header h1 {
-	/*z-index: -100;*/
-	position: absolute;
-	bottom: 0;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	max-height: 60vh;
-	max-width: 85%;
-
-	-webkit-filter: drop-shadow(0px 3vh 0px rgba(100, 0, 50, 0.5));
-	filter: drop-shadow(0px 3vh 0px rgba(100, 0, 50, 0.5));
-
-	background-image: url("./SweetHeart Squad - banner.webp");
-	background-position: center center;
-	background-size: contain;
-	background-repeat: no-repeat;
-
-	font-size: 0;
-	color: transparent;
-}
-
-@media only screen and (max-width: 40em) {
-	.header h1 {
-		background-image: url("./SweetHeart Squad - banner -small.webp");
-	}
-}
-
 /* FOOTER */
 .footer {
 	text-align: center;
