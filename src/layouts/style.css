@@ -408,11 +408,11 @@ a {
 	display: inline-block;
 	border-radius: 50%;
 	vertical-align: middle;
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
 	opacity: 0.5;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: var(--text);
+	mask-position: center;
+	mask-repeat: no-repeat;
+	mask-size: cover;
 }
 
 .icon,
@@ -436,33 +436,33 @@ a {
 }
 
 .gitmark:before {
-	background-image: url("./icons/github.svg");
+	mask-image: url("./icons/github.svg");
 }
 
 .emailmark:before {
-	background-image: url("./icons/gmail.svg");
+	mask-image: url("./icons/gmail.svg");
 }
 
 .twittermark:before {
-	background-image: url("./icons/twitter.svg");
+	mask-image: url("./icons/twitter.svg");
 }
 
 .mastomark:before {
-	background-image: url("./icons/mastodon.svg");
+	mask-image: url("./icons/mastodon.svg");
 }
 
 .itchmark:before {
-	background-image: url("./icons/itch.svg");
+	mask-image: url("./icons/itch.svg");
 }
 
 .rssmark:before {
-	background-image: url("./icons/rss.svg");
+	mask-image: url("./icons/rss.svg");
 }
 
 .tumblrmark:before {
-	background-image: url("./icons/tumblr.svg");
+	mask-image: url("./icons/tumblr.svg");
 }
 
 .blueskymark:before {
-	background-image: url("./icons/bluesky.svg");
+	mask-image: url("./icons/bluesky.svg");
 }
