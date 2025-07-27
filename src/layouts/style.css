@@ -74,8 +74,8 @@ h2 {
 
 .light-bg {
 	background: rgba(255, 255, 255, .5);
-	border-top: solid .15em rgba(255, 128, 200, 0.5);
-	border-bottom: solid .15em rgba(255, 128, 200, 0.5);
+	border-top: solid 1px rgba(255, 128, 200, 0.5);
+	border-bottom: solid 1px rgba(255, 128, 200, 0.5);
 }
 
 .grid {
@@ -149,7 +149,7 @@ h2 {
 	background: rgba(0, 0, 0, 0.1);
 	padding-top: 1em;
 	padding-bottom: 1em;
-	border-top: solid .15em rgba(255, 128, 200, 0.5);
+	border-top: solid 1px rgba(255, 128, 200, 0.5);
 	font-size: .75em;
 	font-weight: 400;
 }
