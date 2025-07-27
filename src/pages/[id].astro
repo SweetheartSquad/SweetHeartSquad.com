@@ -20,12 +20,19 @@ export async function getStaticPaths() {
 const entry = (await getEntry('games', Astro.params.id));
 if (!entry) throw new Error('could not find game');
 const { data: game } = entry;
-const Content = (await render(entry)).Content;
-
-const banner = await getImg(`/${entry.filePath?.replace('.mdx', '-banner') || ''}`);
-const border = await getImg(`/${entry.filePath?.replace('.mdx', '-border') || ''}`);
-const bgImage = await getImg(`/${entry.filePath?.replace('.mdx', '-bg') || ''}`);
-const social = await getImg(`/${entry.filePath?.replace('.mdx', '-social') || ''}`) || `assets/covers/${slugify(game.title, { strict: true })}.png`;
+const [
+	{ Content },
+	banner,
+	border,
+	bgImage,
+	social = `assets/covers/${slugify(game.title, { strict: true })}.png`
+] = await Promise.all([
+	render(entry),
+	getImg(`/${entry.filePath?.replace('.mdx', '-banner') || ''}`),
+	getImg(`/${entry.filePath?.replace('.mdx', '-border') || ''}`),
+	getImg(`/${entry.filePath?.replace('.mdx', '-bg') || ''}`),
+	getImg(`/${entry.filePath?.replace('.mdx', '-social') || ''}`),
+]);
 ---
 
 <Layout
