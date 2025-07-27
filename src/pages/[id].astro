@@ -61,7 +61,7 @@ const social = (await socials[`/${entry.filePath?.replace('.mdx','-social') || '
 		<ul>
 			{game.downloads?.map(i => (
 				<li>
-					<a href={i}>{i}</a>
+					<a href={i}>{i.split('/').filter(i => i).pop()}</a>
 				</li>
 			))}
 		</ul>
