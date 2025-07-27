@@ -1,5 +1,13 @@
 ---
-import "./style.css"
+import "./style.css";
+
+interface Props {
+	title: string;
+	description: string;
+	image: string;
+}
+
+
 ---
 <!doctype html>
 <html lang="en">
@@ -8,32 +16,31 @@ import "./style.css"
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>SweetHeart Squad</title>
+	<title>{Astro.props.title}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	{/* GENERAL SEARCH INFO */}
 	<meta name="author" content="SweetHeart Squad" />
 	<meta name="copyright" content="SweetHeart Squad" />
-	<meta name="description" content="We make weird stuff.">
-	<meta name="keywords" content="games, videogames, software, programming, idk, these are dumb">
-	<link rel="canonical" href="https://SweetHeartSquad.com" />
+	<meta name="description" content={Astro.props.description}>
+	<link rel="canonical" href={Astro.url.toString()} />
 
 	{/* OPENGRAPH TAGS */}
 	<meta property="og:title" content="SweetHeart Squad" />
 	<meta property="og:site_name" content="SweetHeart Squad" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://SweetHeartSquad.com" />
-	<meta property="og:image" content="https://sweetheartsquad.com/assets/images/SweetHeart%20Squad%20-%20icon.png" />
+	<meta property="og:url" content={Astro.url.toString()} />
+	<meta property="og:image" content={Astro.props.image} />
 
 
 	{/* TWITTER CARD */}
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@SweetHeartSquad" />
 	<meta name="twitter:creator" content="SweetHeart Squad" />
-	<meta name="twitter:url" content="https://SweetHeartSquad.com" />
-	<meta name="twitter:title" content="SweetHeartSquad.com" />
-	<meta name="twitter:description" content="We make weird stuff." />
-	<meta name="twitter:image" content="https://sweetheartsquad.com/assets/images/SweetHeart%20Squad%20-%20icon.png" />
+	<meta name="twitter:url" content={Astro.url.toString()} />
+	<meta name="twitter:title" content={Astro.props.title} />
+	<meta name="twitter:description" content={Astro.props.description} />
+	<meta name="twitter:image" content={Astro.props.image} />
 
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
