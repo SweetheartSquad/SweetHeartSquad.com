@@ -18,11 +18,20 @@ rgb(128, 16, 128) purple
 	line-gap-override: 0%;
 }
 
+:root {
+	--bg-rgb: 255, 215, 243;
+	--text-rgb: 0, 0, 0;
+	--accent-rgb: 255, 128, 200;
+	--bg: rgb(var(--bg-rgb));
+	--text: rgb(var(--text-rgb));
+	--accent: rgb(var(--accent-rgb));
+}
+
 html {
 	font-family: 'Raleway', 'Raleway Fallback', sans-serif;
 	font-size: 100%;
-	background-color: rgb(255, 215, 243);
-	color: #000000;
+	background-color: var(--bg);
+	color: var(--text);
 }
 
 @media only screen and (max-width: 40em) {
@@ -73,8 +82,8 @@ h2 {
 
 .light-bg {
 	background: rgba(255, 255, 255, .5);
-	border-top: solid 1px rgba(255, 128, 200, 0.5);
-	border-bottom: solid 1px rgba(255, 128, 200, 0.5);
+	border-top: solid 1px rgba(var(--accent-gb), 0.5);
+	border-bottom: solid 1px rgba(var(--accent-gb), 0.5);
 }
 
 .grid {
@@ -148,7 +157,7 @@ h2 {
 	background: rgba(0, 0, 0, 0.1);
 	padding-top: 1em;
 	padding-bottom: 1em;
-	border-top: solid 1px rgba(255, 128, 200, 0.5);
+	border-top: solid 1px rgba(var(--accent-gb), 0.5);
 	font-size: .75em;
 	font-weight: 400;
 }
@@ -372,6 +381,7 @@ a img {
 
 a {
 	text-decoration: none;
+	color: var(--accent);
 }
 
 .playnow a {

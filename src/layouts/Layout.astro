@@ -6,17 +6,14 @@ interface Props {
 	title: string;
 	description: string;
 	image: string | ImageMetadata;
-	bgColor?: string;
 	bgImage?: ImageMetadata;
+	css?: string;
 }
 
 
 ---
 <!doctype html>
-<html lang="en" style={{
-	backgroundColor: Astro.props.bgColor,
-}}>
-
+<html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,6 +51,7 @@ interface Props {
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
 	<slot name="head" />
+	<style set:text={Astro.props.css}></style>
 </head>
 
 <body style={{
