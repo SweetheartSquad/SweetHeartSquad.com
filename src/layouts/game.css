@@ -23,3 +23,8 @@ iframe {
 p {
 	margin-block: 0.5rem;
 }
+
+
+details > summary {
+	cursor: pointer;
+}
