@@ -2,3 +2,10 @@ body {
 	background-repeat: repeat-x;
 	background-position: center top;
 }
+
+iframe {
+	border: none;
+	background-color: black;
+	width: 80vw;
+	height: 80svh;
+}
