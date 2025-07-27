@@ -9,6 +9,9 @@ import { Image } from 'astro:assets';
 const banners = Object.fromEntries(Object.entries(import.meta.glob<{ default: ImageMetadata }>(
 	"/src/data/games/*-banner.{jpeg,jpg,png,gif,webp}",
 )).map(([k,v]) => [k.split('.').slice(0,-1).join('.'), v]));
+const bgs = Object.fromEntries(Object.entries(import.meta.glob<{ default: ImageMetadata }>(
+	"/src/data/games/*-bg.{jpeg,jpg,png,gif,webp}",
+)).map(([k,v]) => [k.split('.').slice(0,-1).join('.'), v]));
 
 export async function getStaticPaths() {
 	return (await getCollection('games')).map((game) => ({
@@ -24,12 +27,14 @@ const { data: game } = entry;
 const Content = (await render(entry)).Content;
 
 const banner = (await banners[`/${entry.filePath?.replace('.mdx','-banner') || ''}`]?.())?.default;
+const bg = (await bgs[`/${entry.filePath?.replace('.mdx','-bg') || ''}`]?.())?.default;
 ---
 
 <Layout
 	title={game.title}
 	description={game.description || ''}
 	image={`assets/covers/${slugify(game.title, { strict: true })}.png`}
+	bg={bg}
 >
 
 <h1>{

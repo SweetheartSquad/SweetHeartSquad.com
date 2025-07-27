@@ -1,10 +1,12 @@
 ---
+import type { ImageMetadata } from "astro";
 import "./style.css";
 
 interface Props {
 	title: string;
 	description: string;
 	image: string;
+	bg?: ImageMetadata;
 }
 
 
@@ -51,7 +53,9 @@ interface Props {
 	<slot name="head" />
 </head>
 
-<body>
+<body style={Astro.props.bg ? {
+	backgroundImage: `url("${Astro.props.bg?.src}")`,
+} : undefined}>
 
 	<slot />
 
