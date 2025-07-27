@@ -6,6 +6,12 @@ body {
 main {
 	max-width: 1280px;
 	margin-inline: auto;
+
+	border: 0 solid transparent;
+	border-image-slice: 0 50%;
+	border-image-repeat: round;
+	border-top: none;
+	border-bottom: none;
 }
 
 h1 {

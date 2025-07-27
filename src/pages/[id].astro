@@ -11,6 +11,9 @@ import { Image } from 'astro:assets';
 const banners = Object.fromEntries(Object.entries(import.meta.glob<{ default: ImageMetadata }>(
 	"/src/data/games/*-banner.{jpeg,jpg,png,gif,webp}",
 )).map(([k,v]) => [k.split('.').slice(0,-1).join('.'), v]));
+const borders = Object.fromEntries(Object.entries(import.meta.glob<{ default: ImageMetadata }>(
+	"/src/data/games/*-border.{jpeg,jpg,png,gif,webp}",
+)).map(([k,v]) => [k.split('.').slice(0,-1).join('.'), v]));
 const bgs = Object.fromEntries(Object.entries(import.meta.glob<{ default: ImageMetadata }>(
 	"/src/data/games/*-bg.{jpeg,jpg,png,gif,webp}",
 )).map(([k,v]) => [k.split('.').slice(0,-1).join('.'), v]));
@@ -32,6 +35,7 @@ const { data: game } = entry;
 const Content = (await render(entry)).Content;
 
 const banner = (await banners[`/${entry.filePath?.replace('.mdx','-banner') || ''}`]?.())?.default;
+const border = (await borders[`/${entry.filePath?.replace('.mdx','-border') || ''}`]?.())?.default;
 const bgImage = (await bgs[`/${entry.filePath?.replace('.mdx','-bg') || ''}`]?.())?.default;
 const social = (await socials[`/${entry.filePath?.replace('.mdx','-social') || ''}`]?.())?.default || `assets/covers/${slugify(game.title, { strict: true })}.png`;
 ---
@@ -44,7 +48,10 @@ const social = (await socials[`/${entry.filePath?.replace('.mdx','-social') || '
 	bgImage={bgImage}
 >
 
-<main>
+<main style={{
+	borderImageSource: border ? `url("${border.src}")` : undefined,
+	borderInlineWidth: border ? `${border.width / 2}px` : undefined,
+}}>
 	<h1>{
 		banner ? <Image src={banner} alt={game.title} loading="eager" /> : game.title
 	}</h1>

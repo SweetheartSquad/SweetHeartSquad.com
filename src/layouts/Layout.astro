@@ -56,7 +56,7 @@ interface Props {
 
 <body style={{
 	backgroundColor: Astro.props.bgColor,
-	backgroundImage: Astro.props.bgImage ? `url("${Astro.props.bgImage?.src}")` : undefined,
+	backgroundImage: Astro.props.bgImage ? `url("${Astro.props.bgImage.src}")` : undefined,
 }}>
 
 	<slot />
