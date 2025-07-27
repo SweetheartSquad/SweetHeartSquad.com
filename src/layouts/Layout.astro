@@ -10,7 +10,7 @@ interface Props {
 	css?: string;
 }
 
-
+const urlImage = new URL(typeof Astro.props.image === 'string' ? Astro.props.image : Astro.props.image.src, Astro.site).toString();
 ---
 <!doctype html>
 <html lang="en">
@@ -32,7 +32,7 @@ interface Props {
 	<meta property="og:site_name" content="SweetHeart Squad" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={Astro.url.toString()} />
-	<meta property="og:image" content={typeof Astro.props.image === 'string' ? Astro.props.image : Astro.props.image.src} />
+	<meta property="og:image" content={urlImage} />
 
 
 	{/* TWITTER CARD */}
@@ -42,7 +42,7 @@ interface Props {
 	<meta name="twitter:url" content={Astro.url.toString()} />
 	<meta name="twitter:title" content={Astro.props.title} />
 	<meta name="twitter:description" content={Astro.props.description} />
-	<meta name="twitter:image" content={typeof Astro.props.image === 'string' ? Astro.props.image : Astro.props.image.src} />
+	<meta name="twitter:image" content={urlImage} />
 
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
