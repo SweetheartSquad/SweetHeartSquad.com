@@ -3,6 +3,7 @@ import "../layouts/index.css";
 
 import { getCollection } from "astro:content";
 import Game from '../components/Game.astro';
+import { preferInternalLinks } from "../components/preferInternalLinks";
 import Layout from '../layouts/Layout.astro';
 
 const games = await getCollection('games');
@@ -31,12 +32,18 @@ games.sort((a,b) => b.data.date.getTime() - a.data.date.getTime());
 
 	<main>
 		{/* GAMES */}
-		{games.filter(i => i.data.showcase).map(i => <Game {...i.data} />)}
+		{games.filter(i => i.data.showcase).map(i => <Game {...i} />)}
 
 		{/* BIG GAMES LINK */}
-		<section class="content big-link">
-			<a href="https://SweetHeartSquad.itch.io" class="button">Play {Math.floor((games.length-1)/10)*10}+ games!</a>
-		</section>
+		{preferInternalLinks ? (
+			<ul>
+				{games.map(i => <li><a href={`/${i.id}`}>{i.data.title}</a></li>)}
+			</ul>
+		) : (
+			<section class="content big-link">
+				<a href="https://SweetHeartSquad.itch.io" class="button">Play {Math.floor((games.length-1)/10)*10}+ games!</a>
+			</section>
+		)}
 
 		{/* TEAM */}
 		<section class="content team light-bg">

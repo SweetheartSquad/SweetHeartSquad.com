@@ -3,13 +3,17 @@ import type { CollectionEntry } from 'astro:content';
 import fs from 'fs';
 import { readMediaAttributes } from "leather";
 import slugify from 'slugify';
+import { preferInternalLinks } from './preferInternalLinks';
 
-type Props = CollectionEntry<'games'>['data'];
+type Props = CollectionEntry<'games'>;
 const {
-	title,
-	tagline,
-	description,
-	url,
+	id,
+	data: {
+		title,
+		tagline,
+		description,
+		url,
+	},
 } = Astro.props;
 
 const urlVideo = `assets/covers/${slugify(title, { strict: true })}.mp4`;
@@ -23,12 +27,12 @@ const { width, height } = readMediaAttributes(`./public/${urlMain}`);
 
 ---
 <section class="content game">
-	{hasVideo && <div class="vidwrapper"><a href={url} aria-label={`${title} - video preview - click to play`}><video preload="auto" autoplay="autoplay" loop="loop" muted="muted" width={width} height={height} poster={urlPoster}><source src={urlVideo} type="video/mp4" /></video></a></div>}
-	{!hasVideo && <div class="vidwrapper"><a href={url} aria-label={`${title} - preview - click to play`}><img loading="lazy" width={width} height={height} src={hasGif ? urlGif : urlPoster} /></a></div>}
+	{hasVideo && <div class="vidwrapper"><a href={preferInternalLinks ? `/${id}` : url} aria-label={`${title} - video preview - click to play`}><video preload="auto" autoplay="autoplay" loop="loop" muted="muted" width={width} height={height} poster={urlPoster}><source src={urlVideo} type="video/mp4" /></video></a></div>}
+	{!hasVideo && <div class="vidwrapper"><a href={preferInternalLinks ? `/${id}` : url} aria-label={`${title} - preview - click to play`}><img loading="lazy" width={width} height={height} src={hasGif ? urlGif : urlPoster} /></a></div>}
 	<div class="textwrapper">
 		<h2>{title}</h2>
 		<p>{tagline}</p>
 		{description && <p set:html={description} />}
-		<p><span class="playnow"><a href={url}>Play now</a></span></p>
+		<p><span class="playnow"><a href={preferInternalLinks ? `/${id}` : url}>Play now</a></span></p>
 	</div>
 </section>
