@@ -24,10 +24,11 @@ main {
 	border-bottom: none;
 }
 
-h1 {
+main h1 {
 	text-align: center;
 	font-weight: 900;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
+	display: block;
 }
 
 iframe {
