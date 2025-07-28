@@ -27,7 +27,7 @@ main {
 main h1 {
 	text-align: center;
 	font-weight: 900;
-	margin-top: 1rem;
+	margin-block: 1rem;
 	display: block;
 }
 
