@@ -51,10 +51,10 @@ const [
 		banner ? <Image src={banner} alt={game.title} loading="eager" /> : game.title
 	}</h1>
 
-	<section>
+	<section class="embed">
 		{game.embed && <iframe src={game.embed} />}
 	</section>
-	<section>
+	<section class="description">
 		<Content />
 	</section>
 
