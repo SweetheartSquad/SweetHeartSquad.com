@@ -57,6 +57,7 @@ const urlImage = new URL(typeof Astro.props.image === 'string' ? Astro.props.ima
 <body style={{
 	backgroundImage: Astro.props.bgImage ? `url("${Astro.props.bgImage.src}")` : undefined,
 }}>
+	{Astro.routePattern !== '/' && <a class="back-to-home" href="/" title="Back to homepage"></a>}
 	<slot />
 </body>
 

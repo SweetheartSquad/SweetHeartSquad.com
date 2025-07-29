@@ -431,3 +431,23 @@ a {
 .blueskymark:before {
 	mask-image: url("./icons/bluesky.svg");
 }
+
+
+.back-to-home {
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.back-to-home::before {
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	display: block;
+
+	background-image: url("/assets/images/SweetHeart Squad - icon.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
