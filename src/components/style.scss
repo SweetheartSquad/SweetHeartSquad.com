@@ -120,20 +120,20 @@ h2 {
 	top: 0;
 
 	background-image:
-		-webkit-repeating-linear-gradient(45deg, rgba(250, 230, 130, .042) 0%, transparent 20%),
-		-webkit-repeating-linear-gradient(-45deg, transparent 0%, rgba(250, 230, 130, .075) 10%),
-		-webkit-repeating-linear-gradient(45deg, transparent 0%, rgba(250, 230, 130, .08) 40%),
-		-webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(250, 230, 130, .5) 100%);
+		-webkit-repeating-linear-gradient(45deg, rgba(250, 230, 130, .042), transparent 20%),
+		-webkit-repeating-linear-gradient(-45deg, transparent, rgba(250, 230, 130, .075) 10%),
+		-webkit-repeating-linear-gradient(45deg, transparent, rgba(250, 230, 130, .08) 40%),
+		-webkit-linear-gradient(top, transparent, rgba(250, 230, 130, .5) 100%);
 	background-image:
-		-moz-repeating-linear-gradient(45deg, rgba(250, 230, 130, .042) 0%, transparent 20%),
-		-moz-repeating-linear-gradient(-45deg, transparent 0%, rgba(250, 230, 130, .075) 10%),
-		-moz-repeating-linear-gradient(45deg, transparent 0%, rgba(250, 230, 130, .08) 40%),
-		-moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(250, 230, 130, .5) 100%);
+		-moz-repeating-linear-gradient(45deg, rgba(250, 230, 130, .042), transparent 20%),
+		-moz-repeating-linear-gradient(-45deg, transparent, rgba(250, 230, 130, .075) 10%),
+		-moz-repeating-linear-gradient(45deg, transparent, rgba(250, 230, 130, .08) 40%),
+		-moz-linear-gradient(top, transparent, rgba(250, 230, 130, .5) 100%);
 	background-image:
-		repeating-linear-gradient(45deg, rgba(250, 230, 130, .042) 0%, transparent 20%),
-		repeating-linear-gradient(-45deg, transparent 0%, rgba(250, 230, 130, .075) 10%),
-		repeating-linear-gradient(to 45deg, transparent 0%, rgba(250, 230, 130, .08) 40%),
-		linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(250, 230, 130, .5) 100%);
+		repeating-linear-gradient(45deg, rgba(250, 230, 130, .042), transparent 20%),
+		repeating-linear-gradient(-45deg, transparent, rgba(250, 230, 130, .075) 10%),
+		repeating-linear-gradient(to 45deg, transparent, rgba(250, 230, 130, .08) 40%),
+		linear-gradient(top, transparent, rgba(250, 230, 130, .5) 100%);
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: 100%;
