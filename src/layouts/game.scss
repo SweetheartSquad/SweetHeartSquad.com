@@ -18,7 +18,7 @@ main {
 
 	border: 0 solid transparent;
 	border-image-slice: 0 50%;
-	border-image-repeat: round;
+	border-image-repeat: repeat;
 	border-top: none;
 	border-bottom: none;
 }
@@ -35,6 +35,11 @@ main h1 {
 	font-weight: 900;
 	margin-block: 1rem;
 	display: block;
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 }
 
 iframe {
@@ -46,12 +51,49 @@ iframe {
 	aspect-ratio: 16/9;
 }
 
-p {
-	margin-block: 0.5rem;
+section:not(.embed),
+main h1 {
+	padding-inline: 1rem;
+}
+
+p,ul {
+	margin-top: 0;
+	margin-bottom: 1rem;
 }
 
 .description {
 	margin-top: 1rem;
+	line-height: 1.4;
+	font-weight: 500;
+
+	a {
+		text-decoration: underline;
+		font-weight: 600;
+	}
+
+	details {
+		summary {
+			margin-left: 0rem;
+			padding-left: 0.85rem;
+			&::marker {
+				color: var(--accent);
+			}
+		}
+	}
+
+	ul {
+		margin-left: 0rem;
+		padding-left: 2rem;
+	}
+
+	blockquote {
+		padding-left: 0.75rem;
+		margin-left: 1rem;
+		font-style: italic;
+		border-left: 0.25rem solid;
+		border-color: var(--accent);
+		border-radius: 0.4rem;
+	}
 }
 
 
