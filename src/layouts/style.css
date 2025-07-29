@@ -18,6 +18,10 @@ rgb(128, 16, 128) purple
 	line-gap-override: 0%;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 :root {
 	--bg-rgb: 255, 215, 243;
 	--text-rgb: 0, 0, 0;

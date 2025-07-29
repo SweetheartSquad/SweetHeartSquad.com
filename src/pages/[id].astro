@@ -46,6 +46,7 @@ const [
 <main style={{
 	borderImageSource: border ? `url("${border.src}")` : undefined,
 	borderInlineWidth: border ? `${border.width / 2}px` : undefined,
+	maxWidth: `${(border ? border.width : 0) + 1280}px`,
 }}>
 	<h1>{
 		banner ? <Image src={banner} alt={game.title} loading="eager" /> : game.title
