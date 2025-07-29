@@ -23,6 +23,13 @@ main {
 	border-bottom: none;
 }
 
+/* hide borders on mobile */
+@media screen and (max-width: 1280px) {
+	main {
+		border-inline-width: 0 !important;
+	}
+}
+
 main h1 {
 	text-align: center;
 	font-weight: 900;
