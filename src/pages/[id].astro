@@ -5,6 +5,7 @@ import { Image } from 'astro:assets';
 import { getCollection, getEntry, render } from 'astro:content';
 import slugify from 'slugify';
 import Downloads from "../components/Downloads.astro";
+import Embed from "../components/Embed.astro";
 import { getImg } from "../components/images";
 import Layout from '../components/Layout.astro';
 
@@ -51,13 +52,8 @@ const [
 		banner ? <Image src={banner} alt={game.title} loading="eager" /> : game.title
 	}</h1>
 
-	<section class="embed">
-		{game.embed && <iframe allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share" src={game.embed} />}
-	</section>
-	<section class="description">
-		<Content />
-	</section>
-
+	{game.embed && <Embed embed={game.embed} />}
+	<section class="description"><Content /></section>
 	<Downloads downloads={game.downloads} />
 </main>
 </Layout>

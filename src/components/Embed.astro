@@ -1,0 +1,9 @@
+---
+interface Props {
+	embed: string;
+}
+const { embed } = Astro.props;
+---
+<section class="embed">
+	<iframe allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share" src={embed} />
+</section>
