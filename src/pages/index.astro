@@ -1,10 +1,10 @@
 ---
-import "../layouts/index.scss";
+import "../components/index.scss";
 
 import { getCollection } from "astro:content";
 import Game from '../components/Game.astro';
+import Layout from '../components/Layout.astro';
 import { preferInternalLinks } from "../components/preferInternalLinks";
-import Layout from '../layouts/Layout.astro';
 
 const games = await getCollection('games');
 games.sort((a,b) => b.data.date.getTime() - a.data.date.getTime());
