@@ -33,6 +33,6 @@ const { width, height } = readMediaAttributes(`./public/${urlMain}`);
 		<h2>{title}</h2>
 		<p>{tagline}</p>
 		{description && <p set:html={description} />}
-		<p><span class="playnow"><a href={preferInternalLinks ? `/${id}` : url}>Play now</a></span></p>
+		<a class="playnow" href={preferInternalLinks ? `/${id}` : url}>Play now</a>
 	</div>
 </section>
