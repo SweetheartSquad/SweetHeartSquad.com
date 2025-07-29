@@ -8,6 +8,7 @@ interface Props {
 	image: string | ImageMetadata;
 	bgImage?: ImageMetadata;
 	css?: string;
+	hasBorder?: boolean;
 }
 
 const urlImage = new URL(typeof Astro.props.image === 'string' ? Astro.props.image : Astro.props.image.src, Astro.site).toString();
@@ -54,7 +55,7 @@ const urlImage = new URL(typeof Astro.props.image === 'string' ? Astro.props.ima
 	<style set:text={Astro.props.css}></style>
 </head>
 
-<body style={{
+<body class={Astro.props.hasBorder ? 'has-border': ''} style={{
 	backgroundImage: Astro.props.bgImage ? `url("${Astro.props.bgImage.src}")` : undefined,
 }}>
 	{Astro.routePattern !== '/' && <a class="back-to-home" href="/" title="Back to homepage"></a>}

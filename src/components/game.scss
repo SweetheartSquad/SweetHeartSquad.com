@@ -10,6 +10,14 @@ body {
 	margin-top: auto;
 }
 
+body:not(.has-border) {
+	background-color: rgba(var(--accent-rgb), 1);
+
+	main {
+		background-color: var(--bg);
+	}
+}
+
 main {
 	flex: auto;
 	overflow: hidden;
