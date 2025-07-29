@@ -1,8 +1,8 @@
 // @ts-check
+import mdx from "@astrojs/mdx";
 import { defineConfig } from 'astro/config';
 import rehypeExternalLinks from 'rehype-external-links';
-
-import mdx from "@astrojs/mdx";
+import rehypeShiftHeading from 'rehype-shift-heading';
 
 import sitemap from '@astrojs/sitemap';
 
@@ -11,6 +11,9 @@ export default defineConfig({
     site: 'https://sweetheartsquad.com',
     integrations: [mdx(), sitemap()],
     markdown: {
-        rehypePlugins: [[rehypeExternalLinks, { rel: ['nofollow noopener'], target: '_blank' }]],
+        rehypePlugins: [
+            [rehypeExternalLinks, { rel: ['nofollow noopener'], target: '_blank' }],
+            [rehypeShiftHeading, { shift: 1 }],
+        ],
     }
 });
