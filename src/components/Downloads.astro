@@ -11,11 +11,18 @@ if (!downloads || downloads.length <= 0) return null;
 	<details open={open}>
 		<summary><h2>Download</h2></summary>
 		<ul>
-			{downloads.map(i => (
+			{downloads.map(i => {
+				const fragments = i.split('/').filter(i => i && i !== 'https:' && i !== 'embeds.seans.site');
+				let titleFile = fragments.pop() || '';
+				const titleFolder = fragments.pop() || '';
+				if (titleFolder) {
+					titleFile = titleFile.replace(`${titleFolder}-`, '');
+				}
+				return (
 				<li>
-					<a href={i}>{i.split('/').filter(i => i).pop()}</a>
+					<a href={i}>{titleFile}</a>
 				</li>
-			))}
+			)})}
 		</ul>
 	</details>
 }
