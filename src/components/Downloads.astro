@@ -1,19 +1,22 @@
 ---
 interface Props {
 	downloads?: string[];
+	open: boolean;
 }
-const { downloads } = Astro.props;
+const { downloads, open } = Astro.props;
 if (!downloads || downloads.length <= 0) return null;
 ---
 <section class="downloads">
 {
-	<h2>Download</h2>
-	<ul>
-		{downloads.map(i => (
-			<li>
-				<a href={i}>{i.split('/').filter(i => i).pop()}</a>
-			</li>
-		))}
-	</ul>
+	<details open={open}>
+		<summary><h2>Download</h2></summary>
+		<ul>
+			{downloads.map(i => (
+				<li>
+					<a href={i}>{i.split('/').filter(i => i).pop()}</a>
+				</li>
+			))}
+		</ul>
+	</details>
 }
 </section>
