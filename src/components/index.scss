@@ -63,7 +63,7 @@ main > .team {
 }
 
 .content.game:not(:first-of-type) {
-	border-top: solid 1px rgba(var(--accent-dark-rgb), .1);
+	border-top: solid 1px rgba(var(--accent-rgb), .1);
 }
 
 @media only screen and (min-width: 110em) {
@@ -88,12 +88,12 @@ main > .team {
 	height: 20em;
 	margin: 2em;
 	border-radius: 50%;
-	border: solid .2em var(--accent);
+	border: solid .2em var(--accent-light);
 	overflow: hidden;
 	text-align: center;
 	flex: none;
 
-	box-shadow: 0 1vh 0 var(--accent-dark);
+	box-shadow: 0 1vh 0 var(--accent);
 	transform: scale(.95);
 	transition: transform .2s cubic-bezier(0.1, 1.77, 0.45, 0.85);
 }
@@ -208,8 +208,8 @@ video,
 
 .light-bg {
 	background: rgba(var(--white-rgb), .5);
-	border-top: solid 1px rgba(var(--accent-gb), 0.5);
-	border-bottom: solid 1px rgba(var(--accent-gb), 0.5);
+	border-top: solid 1px rgba(var(--accent-light-rgb), 0.5);
+	border-bottom: solid 1px rgba(var(--accent-light-rgb), 0.5);
 }
 
 .grid {
@@ -290,7 +290,7 @@ video,
 	background: rgba(var(--black-rgb), 0.1);
 	padding-top: 1em;
 	padding-bottom: 1em;
-	border-top: solid 1px rgba(var(--accent-gb), 0.5);
+	border-top: solid 1px rgba(var(--accent-light-rgb), 0.5);
 	font-size: .75em;
 	font-weight: 400;
 }
@@ -310,7 +310,7 @@ video,
 
 .team .nav .teamicon a {
 	position: relative;
-	background: var(--accent);
+	background: var(--accent-light);
 	display: inline-block;
 	width: 10vw;
 	height: 10vw;
@@ -323,7 +323,7 @@ video,
 	transition-timing-function: cubic-bezier(0.1, 1.77, 0.45, 0.85);
 	transform: scale(1) rotateY(180deg);
 
-	border-bottom: solid .5em var(--accent-dark);
+	border-bottom: solid .5em var(--accent);
 }
 
 .team .nav .teamicon a img {
@@ -337,8 +337,8 @@ video,
 	max-width: 85%;
 	max-height: 85%;
 	transform: rotateY(180deg);
-	-webkit-filter: drop-shadow(0px .5em 0px var(--accent-dark));
-	filter: drop-shadow(0px .5em 0px var(--accent-dark));
+	-webkit-filter: drop-shadow(0px .5em 0px var(--accent));
+	filter: drop-shadow(0px .5em 0px var(--accent));
 
 	opacity: 1;
 }
@@ -360,7 +360,7 @@ video,
 	white-space: normal;
 	color: var(--white);
 
-	text-shadow: 0 0px 3px var(--accent-dark);
+	text-shadow: 0 0px 3px var(--accent);
 
 	transform: rotateY(180deg);
 
@@ -374,7 +374,7 @@ video,
 .team .nav .teamicon:hover a,
 .team .nav .teamicon:focus-within a {
 	opacity: 1;
-	background: var(--accent-dark);
+	background: var(--accent);
 	transform: scale(1.1) rotateY(0deg);
 }
 
