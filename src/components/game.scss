@@ -11,7 +11,7 @@ body {
 }
 
 body:not(.has-border) {
-	background-color: rgba(var(--accent-rgb), 1);
+	background-color: var(--text);
 
 	main {
 		background-color: var(--bg);
