@@ -88,7 +88,7 @@ p,ul {
 			margin-left: 0rem;
 			padding-left: 0.85rem;
 			&::marker {
-				color: var(--accent-light);
+				color: var(--accent);
 			}
 		}
 	}
@@ -103,7 +103,7 @@ p,ul {
 		margin-left: 1rem;
 		font-style: italic;
 		border-left: 0.25rem solid;
-		border-color: var(--accent-light);
+		border-color: var(--accent);
 		border-radius: 0.4rem;
 	}
 }
