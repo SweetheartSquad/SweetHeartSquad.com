@@ -109,9 +109,35 @@ p,ul {
 }
 
 .downloads {
+	display: flex;
+	gap: 0.5em;
+	align-items: center;
+	flex-wrap: wrap;
 	padding-top: 0.5rem;
 	> details > summary > h2 {
 		display: inline;
+	}
+
+	h2 {
+		display: inline-block;
+
+		&::after {
+			content: ':';
+		}
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: contents;
+		> li {
+			display: contents;
+
+			.button {
+				text-decoration: none;
+				font-size: inherit;
+			}
+		}
 	}
 }
 
