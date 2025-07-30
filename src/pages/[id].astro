@@ -53,8 +53,8 @@ const [
 		banner ? <Image src={banner} alt={game.title} loading="eager" /> : game.title
 	}</h1>
 
-	{game.embed ? <Embed embed={game.embed} /> : <Downloads downloads={game.downloads} open />}
-	{game.embed && <Downloads downloads={game.downloads} open={false} />}
+	{game.embed && <Embed embed={game.embed} />}
+	<Downloads downloads={game.downloads} />
 	<section class="description"><Content /></section>
 </main>
 </Layout>

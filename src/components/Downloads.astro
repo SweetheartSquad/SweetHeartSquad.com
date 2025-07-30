@@ -1,29 +1,24 @@
 ---
 interface Props {
 	downloads?: string[];
-	open: boolean;
 }
-const { downloads, open } = Astro.props;
+const { downloads } = Astro.props;
 if (!downloads || downloads.length <= 0) return null;
 ---
 <section class="downloads">
-{
-	<details open={open}>
-		<summary><h2>Download</h2></summary>
-		<ul>
-			{downloads.map(i => {
-				const fragments = i.split('/').filter(i => i && i !== 'https:' && i !== 'embeds.seans.site');
-				let titleFile = fragments.pop() || '';
-				const titleFolder = fragments.pop() || '';
-				if (titleFolder) {
-					titleFile = titleFile.replace(`${titleFolder}-`, '');
-				}
-				return (
-				<li>
-					<a href={i}>{titleFile}</a>
-				</li>
-			)})}
-		</ul>
-	</details>
-}
+	<h2>Download</h2>
+	<ul>
+		{downloads.map(i => {
+			const fragments = i.split('/').filter(i => i && i !== 'https:' && i !== 'embeds.seans.site');
+			let titleFile = fragments.pop() || '';
+			const titleFolder = fragments.pop() || '';
+			if (titleFolder) {
+				titleFile = titleFile.replace(`${titleFolder}-`, '');
+			}
+			return (
+			<li>
+				<a class="button" href={i}>{titleFile}</a>
+			</li>
+		)})}
+	</ul>
 </section>

@@ -91,15 +91,16 @@ hr {
 
 button,
 .button {
+	text-decoration: none;
 	display: inline-block;
 	border: solid 2px rgba(var(--accent-rgb), .1);
-	background-color: var(--accent-light);
-	color: var(--white);
+	background-color: var(--accent);
+	color: var(--bg);
 	font-size: 2em;
 	font-weight: 900;
 	border-radius: .3em;
 	padding: .5em;
-	transition: opacity .2s ease;
+	transition: opacity .2s ease-out;
 	cursor: pointer;
 	outline: none;
 	text-shadow: 0 -1px 0px rgba(var(--accent-rgb), .1);
@@ -116,10 +117,6 @@ button:focus:not(:active),
 
 button:active,
 .button:active {
-	transition: all .2s;
-	transition-timing-function: cubic-bezier(0.1, 1.77, 0.45, 0.85);
-	background: var(--accent);
-
 	margin-top: 1px;
 	margin-bottom: -1px;
 }
