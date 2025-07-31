@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100.00" height="100.00" viewBox="0.00 0.00 100.00 100.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g stroke-linecap="round" id="Layer_1">
-<path d="M2.15,2.59 L44.70,2.53 L2.35,45.02 L2.15,2.59 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3.00" stroke-opacity="1.00" stroke-linejoin="miter"/>
-<path d="M97.69,97.57 L55.15,97.33 L97.80,55.14 L97.69,97.57 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3.00" stroke-opacity="1.00" stroke-linejoin="miter"/>
-<path d="M97.85,2.59 L55.30,2.53 L97.65,45.02 L97.85,2.59 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3.00" stroke-opacity="1.00" stroke-linejoin="miter"/>
-<path d="M2.31,97.57 L44.85,97.33 L2.20,55.14 L2.31,97.57 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3.00" stroke-opacity="1.00" stroke-linejoin="miter"/>
+<svg width="56.00" height="56.00" viewBox="0.00 0.00 56.00 56.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g stroke-linecap="round" id="Layer_2">
+<path d="M7.53,24.37 L7.61,7.53 L24.37,7.68 L17.85,14.44 L25.07,21.97 L21.73,25.07 L14.59,17.93 L7.53,24.37 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2.00" stroke-opacity="1.00" stroke-linejoin="miter"/>
+<path d="M7.95,31.93 L8.01,48.12 L24.49,48.18 L18.01,41.19 L25.17,33.98 L21.65,30.91 L13.92,37.90 L7.95,31.93 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2.00" stroke-opacity="1.00" stroke-linejoin="miter"/>
+<path d="M0.32,55.80 L0.43,0.45 L55.55,0.57 L55.32,55.57 L0.32,55.80 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-width="1.00" stroke-opacity="0.99" stroke-linejoin="miter"/>
+<path d="M48.47,24.37 L48.39,7.53 L31.63,7.68 L38.15,14.44 L30.93,21.97 L34.27,25.07 L41.41,17.93 L48.47,24.37 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2.00" stroke-opacity="1.00" stroke-linejoin="miter"/>
+<path d="M48.05,31.93 L47.99,48.12 L31.51,48.18 L37.99,41.19 L30.83,33.98 L34.35,30.91 L42.08,37.90 L48.05,31.93 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2.00" stroke-opacity="1.00" stroke-linejoin="miter"/>
 </g>
 </svg>
