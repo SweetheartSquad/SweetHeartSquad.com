@@ -53,12 +53,15 @@ p,ul {
 	width: 100%;
 	max-height: 90svh;
 	aspect-ratio: 16/9;
+
 	.fullscreen {
 		position: absolute;
 		bottom: 0.25rem;
 		right: 0.25rem;
-		// TODO: fullscreen svg
-		// mask-image: url("./icons/fullscreen.svg");
+
+		&:before {
+			mask-image: url("./icons/fullscreen.svg");
+		}
 	}
 
 	&:fullscreen {
