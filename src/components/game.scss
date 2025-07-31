@@ -58,8 +58,13 @@ p,ul {
 		position: absolute;
 		bottom: 0.25rem;
 		right: 0.25rem;
+		background-color: transparent;
 
 		&:before {
+			width: 2rem;
+			height: 2rem;
+			background-color: var(--accent);
+			opacity: 1;
 			mask-image: url("./icons/fullscreen.svg");
 		}
 	}
