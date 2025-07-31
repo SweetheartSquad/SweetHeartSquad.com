@@ -5,7 +5,7 @@ interface Props {
 const { embed } = Astro.props;
 ---
 <section class="embed">
-	<iframe allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share" src={embed} />
+	<iframe title="Embedded application" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share" src={embed} />
 	<button class="fullscreen icon" title="Fullscreen">Fullscreen</button>
 	<script>
 		document.querySelectorAll('.embed').forEach(elEmbed => {
