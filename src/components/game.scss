@@ -10,32 +10,20 @@ body {
 	margin-top: auto;
 }
 
-body:not(.has-border) {
-	background-color: var(--text);
-
-	main {
-		background-color: var(--bg);
+@media screen and (width >= 1280px) {
+	body:not(.has-border) {
+		background-color: var(--text);
 	}
 }
 
 main {
+		background-color: var(--bg);
+	position: relative;
 	flex: auto;
 	overflow: hidden;
 	width: 100%;
+	max-width: 1280px;
 	margin-inline: auto;
-
-	border: 0 solid transparent;
-	border-image-slice: 0 50%;
-	border-image-repeat: repeat;
-	border-top: none;
-	border-bottom: none;
-}
-
-/* hide borders on mobile */
-@media screen and (max-width: 1280px) {
-	main {
-		border-inline-width: 0 !important;
-	}
 }
 
 main h1 {

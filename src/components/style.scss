@@ -41,6 +41,7 @@ html {
 
 body {
 	min-height: 100svh;
+	position: relative;
 }
 
 @media only screen and (max-width: 40em) {
@@ -262,8 +263,9 @@ a:focus:not(:active) {
 	height: 4rem;
 	border-radius: 50%;
 	overflow: hidden;
+	z-index: 100;
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (width < 1280px) {
 		position: static;
 	}
 
@@ -277,5 +279,24 @@ a:focus:not(:active) {
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		background-position: center center;
+	}
+}
+
+.border {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	margin-inline: auto;
+	border: 0 solid transparent;
+	border-image-slice: 0 50%;
+	border-image-repeat: repeat;
+	border-top: none;
+	border-bottom: none;
+
+	@media screen and (width < 1280px) {
+		display: none;
 	}
 }
