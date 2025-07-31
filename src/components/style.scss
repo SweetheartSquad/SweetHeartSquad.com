@@ -22,11 +22,13 @@
 	--black-rgb: 0, 0, 0;
 	--bg-rgb: 255, 215, 243;
 	--text-rgb: 0, 0, 0;
+	--bg2-rgb: var(--text-rgb);
 	--accent-light-rgb: 255, 128, 200;
 	--accent-rgb: 200, 70, 150;
 	--white: rgb(var(--white-rgb));
 	--black: rgb(var(--black-rgb));
 	--bg: rgb(var(--bg-rgb));
+	--bg2: rgb(var(--bg2-rgb));
 	--text: rgb(var(--text-rgb));
 	--accent-light: rgb(var(--accent-light-rgb));
 	--accent: rgb(var(--accent-rgb));
