@@ -293,6 +293,10 @@ video,
 	border-top: solid 1px rgba(var(--accent-light-rgb), 0.5);
 	font-size: .75em;
 	font-weight: 400;
+
+	.icon::before {
+		border-radius: 50%;
+	}
 }
 
 

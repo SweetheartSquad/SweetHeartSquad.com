@@ -6,4 +6,14 @@ const { embed } = Astro.props;
 ---
 <section class="embed">
 	<iframe allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share" src={embed} />
+	<button class="fullscreen icon" title="Fullscreen">Fullscreen</button>
+	<script>
+		document.querySelectorAll('.embed').forEach(elEmbed => {
+			const elBtn = elEmbed.querySelector<HTMLButtonElement>('.fullscreen');
+			if (!elBtn) throw new Error("could not find fullscreen toggle");
+			elBtn.addEventListener('click', () => {
+				elEmbed.requestFullscreen();
+			});
+		})
+	</script>
 </section>
