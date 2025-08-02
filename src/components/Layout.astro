@@ -60,7 +60,7 @@ const urlImage = new URL(typeof Astro.props.image === 'string' ? Astro.props.ima
 }}>
 	{Astro.props.border && <div class="border" style={{
 	borderImageSource: Astro.props.border ? `url("${Astro.props.border.src}")` : undefined,
-	borderInlineWidth: Astro.props.border ? `${Astro.props.border.width / 2}px` : undefined,
+	borderImageWidth: Astro.props.border ? `0 ${Astro.props.border.width / 2}px` : undefined,
 	maxWidth: `${(Astro.props.border ? Astro.props.border.width : 0) + 1280}px`,
 }} />}
 	{Astro.routePattern !== '/' && <a class="back-to-home" href="/" title="Back to homepage"></a>}
