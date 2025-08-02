@@ -12,12 +12,14 @@ interface Props {
 }
 
 const urlImage = new URL(typeof Astro.props.image === 'string' ? Astro.props.image : Astro.props.image.src, Astro.site).toString();
+const accent = Astro.props.css?.match(/--accent-rgb: (.*?);/)?.[1] || '200, 70, 150';
 ---
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content={`rgb(${accent})`} />
 
 	<title>{Astro.props.title}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
