@@ -32,6 +32,8 @@
 	--text: rgb(var(--text-rgb));
 	--accent-light: rgb(var(--accent-light-rgb));
 	--accent: rgb(var(--accent-rgb));
+
+	accent-color: var(--accent);
 }
 
 html {
