@@ -75,6 +75,6 @@ games.sort((a,b) => b.data.date.getTime() - a.data.date.getTime());
 				<li class="icon rssmark"><a title="RSS" href="/rss.xml">RSS</a></li>
 			</ul>
 		</nav>
-		<p>Copyright © 2017-{new Date().getFullYear()} SweetHeart Squad</p>
+		<p>Copyright © {new Date(games[games.length-1].data.date.getTime()).getFullYear()}-{new Date().getFullYear()} SweetHeart Squad</p>
 	</footer>
 </Layout>
