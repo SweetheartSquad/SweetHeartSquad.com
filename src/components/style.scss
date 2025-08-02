@@ -293,7 +293,7 @@ a:focus:not(:active) {
 	margin-inline: auto;
 	border: 0 solid transparent;
 	border-image-slice: 0 50%;
-	border-image-repeat: repeat;
+	border-image-repeat: space repeat;
 	border-top: none;
 	border-bottom: none;
 
