@@ -40,7 +40,7 @@ const srcIcon = (Astro.props.icon && getAbsoluteImg(typeof Astro.props.icon === 
 	<link rel="canonical" href={Astro.url.toString()} />
 
 	{/* OPENGRAPH TAGS */}
-	<meta property="og:title" content="SweetHeart Squad" />
+	<meta property="og:title" content={Astro.props.title} />
 	<meta property="og:site_name" content="SweetHeart Squad" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={Astro.url.toString()} />
