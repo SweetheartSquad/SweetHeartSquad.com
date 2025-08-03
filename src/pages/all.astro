@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import Game from '../components/Game.astro';
+import LayoutList from "../components/LayoutList.astro";
+
+const games = await getCollection('games');
+games.sort((a,b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<LayoutList title="All Games" description="List of games by the SweetHeart Squad.">
+	<h1>All Games</h1>
+
+	{/* GAMES */}
+	<main>
+		{games.map(i => <Game internalLink {...i} />)}
+	</main>
+</LayoutList>
