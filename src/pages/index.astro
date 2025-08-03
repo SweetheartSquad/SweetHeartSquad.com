@@ -13,7 +13,7 @@ games.sort((a,b) => b.data.date.getTime() - a.data.date.getTime());
 <Layout
 	title="SweetHeart Squad"
 	description="We make weird stuff."
-	image="https://sweetheartsquad.com/assets/images/SweetHeart%20Squad%20-%20icon.png"
+	image={new URL('/assets/images/SweetHeart%20Squad%20-%20icon.png', Astro.site).toString()}
 >
 
 	<Fragment slot="head">

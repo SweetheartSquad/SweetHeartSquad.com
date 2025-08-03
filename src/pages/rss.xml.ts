@@ -4,12 +4,12 @@ import fs from 'fs';
 import RSS from 'rss';
 import slugify from 'slugify';
 
-export const GET: APIRoute = async () => {
+export const GET: APIRoute = async (context) => {
 	const feed = new RSS({
 		title: 'SweetHeart Squad',
-		site_url: 'https://sweetheartsquad.com',
-		feed_url: `${'https://sweetheartsquad.com'}/rss.xml`,
-		image_url: `${'https://sweetheartsquad.com'}/assets/image/SweetHeart Squad - icon.png`,
+		site_url: new URL('/', context.site).toString(),
+		feed_url: new URL(`/rss.xml`, context.site).toString(),
+		image_url: new URL(`/assets/image/SweetHeart Squad - icon.png`, context.site).toString(),
 		pubDate: new Date(),
 		copyright: `All rights reserved ${new Date().getFullYear()}, SweetHeart Squad`,
 		language: 'en',
@@ -25,7 +25,7 @@ export const GET: APIRoute = async () => {
 			date: i.date,
 			url: i.url,
 			enclosure: {
-				url: `https://sweetheartsquad.com/assets/covers/${slugify(i.title, { strict: true })}.png`,
+				url: new URL(`/assets/covers/${slugify(i.title, { strict: true })}.png`, context.site).toString(),
 				type: `image/png`,
 				size: fs.statSync(`./public/assets/covers/${slugify(i.title, { strict: true })}.png`).size,
 			},
