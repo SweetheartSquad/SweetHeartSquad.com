@@ -18,12 +18,13 @@ export const GET: APIRoute = async (context) => {
 	const games = await getCollection('games');
 	games.sort((a,b) => b.data.date.getTime() - a.data.date.getTime());
 
-	games.forEach(({ data: i }) => {
+	games.forEach(({ id, data: i }) => {
+		const url = new URL(`/${id}`, context.site).toString();
 		feed.item({
 			title: i.title,
-			description: [i.tagline ? `<blockquote>${i.tagline}</blockquote>` : '', i.description, `<a href="${i.url}">${i.url}</a>`].filter(i => i).join(' '),
+			description: [i.tagline ? `<blockquote>${i.tagline}</blockquote>` : '', i.description, `<a href="${i.url}">${i.url}</a>`, `<a href="${url}">${url}</a>`].filter(i => i).join(' '),
 			date: i.date,
-			url: i.url,
+			url: url,
 			enclosure: {
 				url: new URL(`/assets/covers/${slugify(i.title, { strict: true })}.png`, context.site).toString(),
 				type: `image/png`,
