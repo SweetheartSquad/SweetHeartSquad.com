@@ -304,3 +304,16 @@ a:focus:not(:active) {
 		display: none;
 	}
 }
+
+table {
+	width: 100%;
+	text-align: center;
+	border: 1px solid rgba(var(--text-rgb), 0.5);
+	border-collapse: collapse;
+
+	th,td {
+		border: 1px solid rgba(var(--text-rgb), 0.5);
+		text-align: initial;
+		padding: 0.5em;
+	}
+}
