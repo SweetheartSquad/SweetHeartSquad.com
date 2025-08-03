@@ -8,7 +8,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://sweetheartsquad.com',
+    site: process.env.NODE_ENV === "development" ? 'http://localhost:4321' : 'https://sweetheartsquad.com',
     integrations: [mdx(), sitemap()],
     markdown: {
         rehypePlugins: [
