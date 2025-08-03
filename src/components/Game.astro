@@ -16,9 +16,9 @@ const {
 	internalLink,
 } = Astro.props;
 
-const urlVideo = `assets/covers/${slugify(title, { strict: true })}.mp4`;
-const urlGif = `assets/covers/${slugify(title, { strict: true })}.gif`;
-const urlPoster = `assets/covers/${slugify(title, { strict: true })}.png`;
+const urlVideo = `/assets/covers/${slugify(title, { strict: true })}.mp4`;
+const urlGif = `/assets/covers/${slugify(title, { strict: true })}.gif`;
+const urlPoster = `/assets/covers/${slugify(title, { strict: true })}.png`;
 const hasVideo = fs.existsSync(`./public/${urlVideo}`);
 const hasGif = fs.existsSync(`./public/${urlGif}`);
 const urlMain = hasVideo ? urlVideo : (hasGif ? urlGif : urlPoster);
