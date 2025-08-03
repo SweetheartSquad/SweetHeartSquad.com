@@ -20,7 +20,7 @@ function getAbsoluteImg(image: string | ImageMetadata | GetImageResult | undefin
 
 const urlImage = getAbsoluteImg(Astro.props.image);
 const accent = Astro.props.css?.match(/--accent-rgb: (.*?);/)?.[1] || '200, 70, 150';
-const srcIcon = getAbsoluteImg(Astro.props.icon ? (await getImage({ src: Astro.props.icon, format: 'png', width: 32, height: 32 })) : '/assets/image/SweetHeart Squad - icon.png');
+const srcIcon = (Astro.props.icon && getAbsoluteImg(typeof Astro.props.icon === 'string' ? Astro.props.icon : (await getImage({ src: Astro.props.icon, format: 'png', width: 32, height: 32 })))) || getAbsoluteImg('/assets/images/SweetHeart Squad - icon.png');
 ---
 <!doctype html>
 <html lang="en">

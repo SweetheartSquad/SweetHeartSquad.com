@@ -44,7 +44,7 @@ const [
 	css={game.css}
 	bgImage={bgImage}
 	border={border}
-	icon={icon}
+	icon={icon || `assets/covers/${slugify(game.title, { strict: true })}.png`}
 >
 
 <main>
