@@ -86,6 +86,15 @@ p,ul {
 	}
 }
 
+.preview {
+	text-align: center;
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
 .description {
 	margin-top: 1rem;
 	line-height: 1.4;

@@ -25,8 +25,9 @@ const [
 	banner,
 	border,
 	bgImage,
-	social = `assets/covers/${slugify(game.title, { strict: true })}.png`,
+	social,
 	icon,
+	preview,
 ] = await Promise.all([
 	render(entry),
 	getImg(`/${entry.filePath?.replace('.mdx', '-banner') || ''}`),
@@ -34,13 +35,14 @@ const [
 	getImg(`/${entry.filePath?.replace('.mdx', '-bg') || ''}`),
 	getImg(`/${entry.filePath?.replace('.mdx', '-social') || ''}`),
 	getImg(`/${entry.filePath?.replace('.mdx', '-icon') || ''}`),
+	getImg(`/${entry.filePath?.replace('.mdx', '-preview') || ''}`),
 ]);
 ---
 
 <Layout
 	title={game.title}
 	description={game.description || ''}
-	image={social}
+	image={social || `assets/covers/${slugify(game.title, { strict: true })}.png`}
 	css={game.css}
 	bgImage={bgImage}
 	border={border}
@@ -53,6 +55,7 @@ const [
 	}</h1>
 
 	{game.embed && <Embed embed={game.embed} />}
+	{!game.embed && (preview || social) && <div class="preview"><Image src={(preview || social) as ImageMetadata} width={720} alt={`Preview image for ${game.title}`} /></div>}
 	<Downloads downloads={game.downloads} />
 	<section class="description"><Content /></section>
 </main>
