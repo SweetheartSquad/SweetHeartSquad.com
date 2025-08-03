@@ -9,7 +9,7 @@ export const GET: APIRoute = async (context) => {
 		title: 'SweetHeart Squad',
 		site_url: new URL('/', context.site).toString(),
 		feed_url: new URL(`/rss.xml`, context.site).toString(),
-		image_url: new URL(`/assets/image/SweetHeart Squad - icon.png`, context.site).toString(),
+		image_url: new URL(`/assets/images/SweetHeart Squad - icon.png`, context.site).toString(),
 		pubDate: new Date(),
 		copyright: `All rights reserved ${new Date().getFullYear()}, SweetHeart Squad`,
 		language: 'en',
