@@ -6,14 +6,14 @@ import "./style.scss";
 interface Props {
 	title: string;
 	description: string;
-	image: string | ImageMetadata;
+	image: string | ImageMetadata | undefined;
 	bgImage?: ImageMetadata;
 	border?: ImageMetadata;
 	icon?: ImageMetadata;
 	css?: string;
 }
 
-const urlImage = new URL(typeof Astro.props.image === 'string' ? Astro.props.image : Astro.props.image.src, Astro.site).toString();
+const urlImage = Astro.props.image ? new URL(typeof Astro.props.image === 'string' ? Astro.props.image : Astro.props.image.src, Astro.site).toString() : '';
 const accent = Astro.props.css?.match(/--accent-rgb: (.*?);/)?.[1] || '200, 70, 150';
 const srcIcon = Astro.props.icon ? (await getImage({ src: Astro.props.icon, format: 'png', width: 32, height: 32 })).src : new URL('/assets/image/SweetHeart Squad - icon.png', Astro.site).toString();
 ---
@@ -39,7 +39,7 @@ const srcIcon = Astro.props.icon ? (await getImage({ src: Astro.props.icon, form
 	<meta property="og:site_name" content="SweetHeart Squad" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={Astro.url.toString()} />
-	<meta property="og:image" content={urlImage} />
+	{urlImage && <meta property="og:image" content={urlImage} />}
 
 
 	{/* TWITTER CARD */}
@@ -49,7 +49,7 @@ const srcIcon = Astro.props.icon ? (await getImage({ src: Astro.props.icon, form
 	<meta name="twitter:url" content={Astro.url.toString()} />
 	<meta name="twitter:title" content={Astro.props.title} />
 	<meta name="twitter:description" content={Astro.props.description} />
-	<meta name="twitter:image" content={urlImage} />
+	{urlImage && <meta name="twitter:image" content={urlImage} />}
 
 	<link rel="sitemap" href="/sitemap-index.xml" />
 
