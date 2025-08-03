@@ -15,7 +15,7 @@ interface Props {
 
 const urlImage = new URL(typeof Astro.props.image === 'string' ? Astro.props.image : Astro.props.image.src, Astro.site).toString();
 const accent = Astro.props.css?.match(/--accent-rgb: (.*?);/)?.[1] || '200, 70, 150';
-const srcIcon = Astro.props.icon ? (await getImage({ src: Astro.props.icon, format: 'png' })).src : new URL('/assets/image/SweetHeart Squad - icon.png', Astro.site).toString();
+const srcIcon = Astro.props.icon ? (await getImage({ src: Astro.props.icon, format: 'png', width: 32, height: 32 })).src : new URL('/assets/image/SweetHeart Squad - icon.png', Astro.site).toString();
 ---
 <!doctype html>
 <html lang="en">
