@@ -3,23 +3,14 @@ import "../components/index.scss";
 
 import { getCollection } from "astro:content";
 import Game from '../components/Game.astro';
-import Layout from '../components/Layout.astro';
+import LayoutList from "../components/LayoutList.astro";
 import { preferInternalLinks } from "../components/preferInternalLinks";
 
 const games = await getCollection('games');
 games.sort((a,b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
-<Layout
-	title="SweetHeart Squad"
-	description="We make weird stuff."
-	image={new URL('/assets/images/SweetHeart%20Squad%20-%20icon.png', Astro.site).toString()}
->
-
-	<Fragment slot="head">
-		<link rel="alternate" type="application/rss+xml" title="SweetHeart Squad" href={new URL("rss.xml", Astro.site)} />
-	</Fragment>
-
+<LayoutList title="SweetHeart Squad" description="We make weird stuff.">
 	{/* LOGO HEADER */}
 	<header class="header grid dark-bg">
 		<h1>SweetHeart Squad</h1>
@@ -32,18 +23,12 @@ games.sort((a,b) => b.data.date.getTime() - a.data.date.getTime());
 
 	<main>
 		{/* GAMES */}
-		{games.filter(i => i.data.showcase).map(i => <Game {...i} />)}
+		{games.filter(i => i.data.showcase).map(i => <Game internalLink={false} {...i} />)}
 
 		{/* BIG GAMES LINK */}
-		{preferInternalLinks ? (
-			<ul>
-				{games.map(i => <li><a href={`/${i.id}`}>{i.data.title}</a></li>)}
-			</ul>
-		) : (
-			<section class="content big-link">
-				<a href="https://SweetHeartSquad.itch.io" class="button">Play {Math.floor((games.length-1)/10)*10}+ games!</a>
-			</section>
-		)}
+		<section class="big-link">
+			<a href={preferInternalLinks ? '/all' : "https://SweetHeartSquad.itch.io"} class="button">Play {Math.floor((games.length-1)/10)*10}+ games!</a>
+		</section>
 
 		{/* TEAM */}
 		<section class="content team light-bg">
@@ -55,26 +40,5 @@ games.sort((a,b) => b.data.date.getTime() - a.data.date.getTime());
 				</ul>
 			</nav>
 		</section>
-
 	</main>
-
-	{/* PRE-FOOTER ICON */}
-	<section class="grid dark-bg pre-footer"></section>
-
-	{/* FOOTER WITH LINKS */}
-	<footer class="footer">
-		<nav class="nav">
-			<ul>
-				<li class="icon itchmark"><a title="Games on itch.io" href="https://SweetHeartSquad.itch.io">itch.io</a></li>
-				<li class="icon blueskymark"><a title="Bluesky" href="https://bsky.app/profile/sweetheartsquad.bsky.social">bluesky</a></li>
-				<li class="icon mastomark"><a title="Mastodon" href="https://mastodon.gamedev.place/@SweetHeartSquad" rel="me">mastodon</a></li>
-				<li class="icon tumblrmark"><a title="tumblr" href="https://www.tumblr.com/sweetheartsquad">tumblr</a></li>
-				<li class="icon twittermark"><a title="Twitter" href="https://twitter.com/SweetHeartSquad">twitter</a></li>
-				<li class="icon gitmark"><a title="GitHub" href="https://github.com/SweetHeartSquad">github</a></li>
-				<li class="icon emailmark"><a title="Email" href="mailto:SweetHeartSquad@gmail.com">email</a></li>
-				<li class="icon rssmark"><a title="RSS" href="/rss.xml">RSS</a></li>
-			</ul>
-		</nav>
-		<p>Copyright © {new Date(games[games.length-1].data.date.getTime()).getFullYear()}-{new Date().getFullYear()} SweetHeart Squad</p>
-	</footer>
-</Layout>
+</LayoutList>
