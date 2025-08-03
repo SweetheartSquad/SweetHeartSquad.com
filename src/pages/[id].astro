@@ -25,13 +25,15 @@ const [
 	banner,
 	border,
 	bgImage,
-	social = `assets/covers/${slugify(game.title, { strict: true })}.png`
+	social = `assets/covers/${slugify(game.title, { strict: true })}.png`,
+	icon,
 ] = await Promise.all([
 	render(entry),
 	getImg(`/${entry.filePath?.replace('.mdx', '-banner') || ''}`),
 	getImg(`/${entry.filePath?.replace('.mdx', '-border') || ''}`),
 	getImg(`/${entry.filePath?.replace('.mdx', '-bg') || ''}`),
 	getImg(`/${entry.filePath?.replace('.mdx', '-social') || ''}`),
+	getImg(`/${entry.filePath?.replace('.mdx', '-icon') || ''}`),
 ]);
 ---
 
@@ -42,6 +44,7 @@ const [
 	css={game.css}
 	bgImage={bgImage}
 	border={border}
+	icon={icon}
 >
 
 <main>
