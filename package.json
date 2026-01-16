@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "engines": {
-    "node": "20.x"
+    "node": "24.x"
   },
   "scripts": {
     "start": "astro dev",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/sitemap": "^3.7.0",
-    "@types/node": "^20.17.16",
+    "@types/node": "^24.10.9",
     "@types/rss": "^0.0.32",
     "astro": "^5.16.11",
     "leather": "^3.0.3",
