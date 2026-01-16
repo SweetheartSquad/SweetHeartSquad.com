@@ -13,11 +13,11 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^4.3.1",
-    "@astrojs/sitemap": "^3.4.1",
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/sitemap": "^3.7.0",
     "@types/node": "^20.17.16",
     "@types/rss": "^0.0.32",
-    "astro": "^5.12.3",
+    "astro": "^5.16.11",
     "leather": "^3.0.3",
     "rehype-external-links": "^3.0.0",
     "rehype-shift-heading": "^2.0.0",
