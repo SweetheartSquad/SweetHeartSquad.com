@@ -16,7 +16,7 @@ jobs:
   notify-start:
     runs-on: ubuntu-latest
     steps:
-      - uses: Ilshidur/action-discord@0.3.2
+      - uses: Ilshidur/action-discord@0.4.0
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_EMBEDS: '[{ "color": 16426275, "title": "deploying...", "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" }]'
@@ -44,7 +44,7 @@ jobs:
     needs: [deploy]
     runs-on: ubuntu-latest
     steps:
-      - uses: Ilshidur/action-discord@0.3.2
+      - uses: Ilshidur/action-discord@0.4.0
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_EMBEDS: '[{ "color": 2357925, "title": "deployed", "url": "https://sweetheartsquad.com" }]'
@@ -54,7 +54,7 @@ jobs:
     needs: [deploy]
     runs-on: ubuntu-latest
     steps:
-      - uses: Ilshidur/action-discord@0.3.2
+      - uses: Ilshidur/action-discord@0.4.0
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_EMBEDS: '[{ "color": 16393080, "title": "failed", "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" }]'
